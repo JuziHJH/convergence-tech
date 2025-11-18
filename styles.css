@@ -640,16 +640,24 @@ html {
 
 /* Background Pattern - layout_93F1VZ */
 .our-core-bg-pattern {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    padding: 0px;
+    row-gap: 0px;
+    
+    /* Position */
     position: absolute;
     left: -50px;
     top: -24.2px;
     width: 1540px;
+    height: 806.4px;
     
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    
+    /* Visual */
     opacity: 0.06; /* opacity from MCP: 0.05999999865889549 */
     background-image: radial-gradient(circle, #101010 1px, transparent 1px);
     background-size: 38.4px 38.4px;

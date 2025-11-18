@@ -958,57 +958,28 @@ html {
     overflow: hidden;
 }
 
-/* Background Gradient - layout_OA4AM3 */
+/* Background Gradient - Using SVG from Figma */
 .why-insight-bg-gradient {
     position: absolute;
+    width: 4952.91px;
+    height: 4608.66px;
     left: -3348.73px;
-    top: -1610.57px;
-    width: 6492.1px;
-    height: 6338.4px;
-    pointer-events: none;
+    bottom: -1251.89px;
+    
+    /* Transform matrix for rotation */
+    transform: matrix(0.89, 0.45, 0.45, -0.89, 0, 0);
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
     z-index: 0;
-}
-
-/* Three gradient layers */
-.why-insight-bg-gradient::before {
-    content: '';
-    position: absolute;
-    left: 813.88px;
-    top: 768.16px;
-    width: 5098.36px;
-    height: 4334.63px;
-    background: #032241;
-    filter: blur(767.99px); /* effect_OXR5S1 */
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.why-insight-bg-gradient::after {
-    content: '';
-    position: absolute;
-    left: 1325.73px;
-    top: 1214.82px;
-    width: 4038.08px;
-    height: 3494.26px;
-    background: #054483;
-    filter: blur(383.99px); /* effect_ZIBYRM */
-    border-radius: 50%;
-    z-index: 2;
-}
-
-/* White highlight layer - created with pseudo-element on section */
-.why-insight-section::before {
-    content: '';
-    position: absolute;
-    left: -1714.16px; /* -3348.73 + 1634.57 */
-    top: 93.27px; /* -1610.57 + 1703.84 */
-    width: 3063.55px;
-    height: 2701.35px;
-    background: #FFFFFF;
-    filter: blur(512px); /* effect_76OOI7 */
-    border-radius: 50%;
+    
     pointer-events: none;
-    z-index: 3;
+    background-image: url('assets/bg-gradient-why.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Background Pattern - layout_M97JOL */
@@ -1078,7 +1049,7 @@ html {
     width: 784px;
 }
 
-/* Label - style_FQZQC7 */
+/* Label - style_97C512 from Figma MCP */
 .why-label {
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 600;
@@ -1091,7 +1062,7 @@ html {
     margin: 0;
 }
 
-/* Container - layout_KUXFTT */
+/* Container - layout_L5KFGK */
 .why-title-container {
     display: flex;
     flex-direction: column;
@@ -1099,24 +1070,24 @@ html {
     gap: 12px;
 }
 
-/* Title - Inter/Heading/H2/48/Medium */
+/* Title - Inter/Heading/H2/48/Medium from Figma MCP */
 .why-section-title {
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 500;
     font-size: 48px;
-    line-height: 1.2em; /* 1.2000000476837158em */
+    line-height: 1.2000000476837158em; /* Exact from Figma */
     letter-spacing: -0.05em;
     text-align: center;
     color: #FFFFFF; /* Neutral/10 */
     margin: 0;
 }
 
-/* Description - Inter/Heading/H6/18/Regular */
+/* Description - Inter/Heading/H6/18/Regular from Figma MCP */
 .why-section-description {
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.4em; /* 1.3999999364217122em */
+    line-height: 1.3999999364217122em; /* Exact from Figma */
     letter-spacing: -0.05em;
     text-align: center;
     color: #C2C2C2; /* Neutral/50 */
@@ -1144,36 +1115,45 @@ html {
     flex: 1;
 }
 
-/* Card - layout_GA1BDL */
+/* Card - layout_JYVANU from Figma MCP */
 .why-card {
     /* Auto layout */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
+    align-self: stretch;
     gap: 20px;
+    padding: 24px;
     
-    width: 302px;
-    height: 428px;
+    /* Sizing - fill from Figma */
+    flex: 1;
     
+    /* Fill - from fill_81E6G1 */
     background: rgba(255, 255, 255, 0.04);
-    /* Background Blur */
-    backdrop-filter: blur(10px);
+    
+    /* Stroke - Gradient from Primary/LinearGradient */
+    border: 1px solid transparent;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04)),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    
+    /* Background Blur - from Figma MCP */
+    backdrop-filter: blur(20px);
     border-radius: 16px;
     
-    /* Inside auto layout */
-    flex: none;
-    align-self: stretch;
-    flex-grow: 1;
     transition: all 0.3s ease;
 }
 
 .why-card:hover {
     background: rgba(255, 255, 255, 0.08);
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
     transform: translateY(-4px);
 }
 
-/* Card Image - layout_TYK2P4 & layout_J4VWYO */
+/* Card Image - layout_1DQ5PU from Figma MCP */
 .why-card-image {
     box-sizing: border-box;
     
@@ -1182,26 +1162,28 @@ html {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px;
     gap: 4px;
+    
+    /* Padding - Icon spacing: 上下98px, 左右91px */
+    padding: 98px 91px;
     
     /* Sizing - fill from Figma */
     align-self: stretch;
     flex-grow: 1;
     
-    /* Fill - Updated to #FFFFFF */
-    background: #FFFFFF;
+    /* Fill - 16% transparency from fill_T8GZO9 */
+    background: rgba(255, 255, 255, 0.16);
     
     /* Stroke - Gradient from Figma MCP */
     border: 1px solid transparent;
     background-image: 
-        linear-gradient(#FFFFFF, #FFFFFF),
+        linear-gradient(rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.16)),
         linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
     
-    /* Background Blur */
-    backdrop-filter: blur(10px);
+    /* Background Blur - from Figma MCP */
+    backdrop-filter: blur(20px);
     border-radius: 12px;
     
     /* Inside auto layout */
@@ -1226,28 +1208,28 @@ html {
     gap: 8px;
 }
 
-/* Card Title - Inter/Heading/H5/24/Medium */
+/* Card Title - Inter/Heading/H5/24/Medium from Figma MCP */
 .why-card-title {
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 500;
     font-size: 24px;
-    line-height: 1.4em; /* 1.3999999364217122em */
+    line-height: 1.3999999364217122em; /* Exact from Figma */
     letter-spacing: -0.05em;
     text-align: left;
     color: #FFFFFF; /* Neutral/10 */
     margin: 0;
 }
 
-/* Card Description - Inter/Heading/H6/18/Regular */
+/* Card Description - Inter/Heading/H6/18/Regular from Figma MCP */
 .why-card-description {
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.4em; /* 1.3999999364217122em */
+    line-height: 1.3999999364217122em; /* Exact from Figma */
     letter-spacing: -0.05em;
     text-align: left;
     color: #FFFFFF; /* Neutral/10 */
-    opacity: 0.6; /* opacity from Figma */
+    opacity: 0.6000000238418579; /* Exact opacity from Figma */
     margin: 0;
 }
 

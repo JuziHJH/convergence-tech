@@ -949,37 +949,68 @@ html {
 
 /* Why&Insight Section - Based on Figma MCP node-id=4-102566 */
 .why-insight-section {
-    /* layout_MS2ASE from Figma */
+    /* layout_J6K6JD from Figma MCP */
     display: flex;
     flex-direction: column;
     align-self: stretch;
     position: relative;
-    background: #101010; /* Neutral/100 */
+    background: #101010; /* Neutral/100 from Figma MCP */
     overflow: hidden;
 }
 
-/* Background Gradient - Using SVG from Figma */
+/* Background Gradient - Three Shapes from Figma MCP */
 .why-insight-bg-gradient {
     position: absolute;
-    width: 4952.91px;
-    height: 4608.66px;
-    left: -3348.73px;
-    bottom: -1251.89px;
-    
-    /* Transform matrix for rotation */
-    transform: matrix(0.89, 0.45, 0.45, -0.89, 0, 0);
-    
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    z-index: 0;
-    
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     pointer-events: none;
-    background-image: url('assets/bg-gradient-why.svg');
+    z-index: 0;
+}
+
+/* Shape 1 - #032241 with blur(384px) - SVG Implementation */
+.why-insight-bg-gradient::before {
+    content: '';
+    position: absolute;
+    width: 2549.18px;
+    height: 2166.63px;
+    left: 813.88px;
+    top: 768.16px;
+    background-image: url('assets/bg-gradient-shape1.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    z-index: 1;
+}
+
+/* Shape 2 - #054483 with blur(192px) and matrix transform */
+.why-insight-bg-gradient::after {
+    content: '';
+    position: absolute;
+    width: 2452.62px;
+    height: 2943.34px;
+    left: 1325.73px;
+    top: 1214.82px;
+    background: #054483;
+    filter: blur(192px);
+    transform: matrix(0.85, -0.53, 0.66, 0.75, 0, 0);
+    z-index: 2;
+}
+
+/* Shape 3 - #FFFFFF with blur(256px) and rotation */
+.why-insight-section::before {
+    content: '';
+    position: absolute;
+    width: 2545.92px;
+    height: 1916.16px;
+    left: 1634.57px;
+    top: 1703.84px;
+    background: #FFFFFF;
+    filter: blur(256px);
+    border-radius: 38.4px;
+    transform: rotate(-21deg);
+    pointer-events: none;
+    z-index: 3;
 }
 
 /* Background Pattern - layout_M97JOL */

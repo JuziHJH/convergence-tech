@@ -260,16 +260,37 @@ html {
 
 /* Background Pattern - Based on Figma node-id=45-24834 */
 .bg-pattern-layer {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    padding: 0px;
+    gap: 0px;
+    
+    /* Position - centered and fills Landing Page */
     position: absolute;
-    top: 0;
     left: 50%;
-    transform: translateX(-50%);
-    width: 1540px; /* Exact width from layout_B4OIKC */
-    height: 100%;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%); /* Center align horizontally */
+    
+    /* Sizing - responsive with max-width constraint */
+    width: 100%; /* Fill container width */
+    max-width: 2160px; /* Maximum width limit */
+    min-width: 1540px; /* Minimum width from Figma */
+    height: 100%; /* Fill container height - auto adapt */
+    
+    /* Visual - Using SVG pattern */
     opacity: 0.08; /* Exact opacity from Figma: 0.07999999821186066 */
-    background-image: radial-gradient(circle, rgba(255, 255, 255, 1) 1px, transparent 1px);
+    background-image: url('assets/pattern-dot-white.svg');
     background-size: 38.4px 38.4px; /* Circle size from layout_67LKBJ */
-    background-position: center;
+    background-repeat: repeat;
+    background-position: center center;
+    pointer-events: none;
+    z-index: 4;
 }
 
 .landing-content {
@@ -992,15 +1013,35 @@ html {
 
 /* Background Pattern - layout_M97JOL */
 .why-insight-bg-pattern {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    padding: 0px;
+    gap: 0px;
+    
+    /* Position - centered and fills Why&Insight section */
     position: absolute;
-    left: -50px;
-    top: -164px;
-    width: 1540px;
-    height: 100%;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%); /* Center align horizontally */
+    
+    /* Sizing - responsive with max-width constraint */
+    width: 100%; /* Fill container width */
+    max-width: 2160px; /* Maximum width limit */
+    min-width: 1540px; /* Minimum width from Figma */
+    height: 100%; /* Fill container height - auto adapt */
+    
+    /* Visual - Using SVG pattern */
     opacity: 0.08; /* Exact opacity from Figma */
-    background-image: radial-gradient(circle, rgba(255, 255, 255, 1) 1px, transparent 1px);
+    background-image: url('assets/pattern-dot-white.svg');
     background-size: 38.4px 38.4px;
-    background-position: center;
+    background-repeat: repeat;
+    background-position: center center;
     pointer-events: none;
     z-index: 4;
 }

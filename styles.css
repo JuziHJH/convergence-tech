@@ -702,6 +702,10 @@ html {
     align-self: stretch;
     gap: 80px;
     
+    max-width: 1280px; /* 最大宽度限制 */
+    margin: 0 auto; /* 居中对齐 */
+    width: 100%; /* 宽度自适应 */
+    
     position: relative;
     z-index: 1;
 }

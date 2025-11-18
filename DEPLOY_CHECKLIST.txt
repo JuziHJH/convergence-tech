@@ -1,0 +1,176 @@
+====================================================================
+    CONVERGENCE TECH - GoDaddy 部署文件清单
+====================================================================
+
+上线日期: ________________
+操作人员: ________________
+域名: ____________________
+
+====================================================================
+核心文件 (必须上传 - 3个文件)
+====================================================================
+[  ] index.html          (20.7 KB)   - 主页面
+[  ] styles.css          (52.74 KB)  - 样式表
+[  ] script.js           (5.01 KB)   - 交互脚本
+
+====================================================================
+图片资源 - PNG (8个文件, ~856 KB)
+====================================================================
+[  ] assets/avatar.png                    (2.23 KB)
+[  ] assets/introduction-img.png          (254.4 KB)
+[  ] assets/content-container.png         (177.16 KB)
+[  ] assets/request-text.png              (115.33 KB)
+[  ] assets/logo-header.png               (5.9 KB)
+[  ] assets/logo-landing.png              (5.9 KB)
+[  ] assets/logo-footer.png               (5.9 KB)
+[  ] assets/figma-images/side-content.png (296.88 KB)
+
+====================================================================
+SVG 图标资源 (17个文件, ~25 KB)
+====================================================================
+[  ] assets/arrow-right.svg               (367 B)
+[  ] assets/icon-ai.svg                   (2.42 KB)
+[  ] assets/icon-execution.svg            (2.54 KB)
+[  ] assets/icon-expertise.svg            (1.63 KB)
+[  ] assets/icon-perspective.svg          (4.66 KB)
+[  ] assets/number-one.svg                (751 B)
+[  ] assets/number-two.svg                (1.46 KB)
+[  ] assets/number-three.svg              (1.71 KB)
+[  ] assets/number-four.svg               (1.34 KB)
+[  ] assets/status-indicators.svg         (355 B)
+[  ] assets/pattern-dot-white.svg         (167 B)
+[  ] assets/pattern-dot.svg               (315 B)
+[  ] assets/bg-gradient-why.svg           (2.11 KB)
+[  ] assets/bg-gradient-why-complete.svg  (2.11 KB)
+[  ] assets/logo-header.svg               (859 B)
+[  ] assets/logo-landing.svg              (815 B)
+[  ] assets/logo-footer.svg               (826 B)
+
+====================================================================
+其他必需资源
+====================================================================
+[  ] assets/CodeBubbyAssets/1_20703/52.svg  - FAQs图标
+
+====================================================================
+文件夹结构 (上传到 GoDaddy public_html)
+====================================================================
+public_html/
+├── index.html
+├── styles.css
+├── script.js
+└── assets/
+    ├── avatar.png
+    ├── introduction-img.png
+    ├── content-container.png
+    ├── request-text.png
+    ├── logo-header.png
+    ├── logo-landing.png
+    ├── logo-footer.png
+    ├── arrow-right.svg
+    ├── icon-ai.svg
+    ├── icon-execution.svg
+    ├── icon-expertise.svg
+    ├── icon-perspective.svg
+    ├── number-one.svg
+    ├── number-two.svg
+    ├── number-three.svg
+    ├── number-four.svg
+    ├── status-indicators.svg
+    ├── pattern-dot-white.svg
+    ├── pattern-dot.svg
+    ├── bg-gradient-why.svg
+    ├── bg-gradient-why-complete.svg
+    ├── logo-header.svg
+    ├── logo-landing.svg
+    ├── logo-footer.svg
+    ├── figma-images/
+    │   └── side-content.png
+    └── CodeBubbyAssets/
+        └── 1_20703/
+            └── 52.svg
+
+====================================================================
+部署步骤
+====================================================================
+[  ] 1. 登录 GoDaddy 账户
+[  ] 2. 进入 cPanel 或 File Manager
+[  ] 3. 导航到 public_html 目录
+[  ] 4. 清空或备份旧文件
+[  ] 5. 上传 index.html, styles.css, script.js
+[  ] 6. 创建 assets 文件夹
+[  ] 7. 上传所有 PNG 图片到 assets/
+[  ] 8. 上传所有 SVG 文件到 assets/
+[  ] 9. 创建 assets/figma-images/ 文件夹
+[  ] 10. 上传 side-content.png
+[  ] 11. 创建 assets/CodeBubbyAssets/1_20703/ 文件夹
+[  ] 12. 上传 52.svg
+
+====================================================================
+部署后测试 (在浏览器中访问您的域名)
+====================================================================
+[  ] 页面能正常加载
+[  ] Header Logo 显示正常
+[  ] Landing Page 背景渐变显示
+[  ] Landing Page Logo 显示正常
+[  ] Side Content 图片显示正常
+[  ] "Learn More" 按钮点击跳转到 Introduction
+[  ] Introduction 图片显示正常
+[  ] Avatar 头像显示正常
+[  ] "Contact Us" 按钮跳转到 Footer
+[  ] Our Core 四个步骤图标显示
+[  ] Why Convergence Tech 四个卡片图标显示
+[  ] Why 背景渐变显示正常
+[  ] Insight Request Text 图片显示
+[  ] Status Indicators 显示正常
+[  ] FAQs 图标显示
+[  ] FAQ 展开/收起功能正常
+[  ] Footer Logo 显示正常
+[  ] Footer Background Pattern 显示正常
+[  ] 邮箱链接可点击
+[  ] 移动端响应式布局正常 (测试手机视图)
+[  ] 平板响应式布局正常
+
+====================================================================
+浏览器兼容性测试
+====================================================================
+[  ] Chrome 浏览器
+[  ] Firefox 浏览器
+[  ] Safari 浏览器
+[  ] Edge 浏览器
+[  ] 移动端 Safari (iOS)
+[  ] 移动端 Chrome (Android)
+
+====================================================================
+性能检查
+====================================================================
+[  ] 页面加载时间 < 3秒
+[  ] 所有图片加载完成
+[  ] 无 404 错误 (检查浏览器控制台)
+[  ] 无 JavaScript 错误
+[  ] 无 CSS 加载错误
+
+====================================================================
+SEO 检查 (可选)
+====================================================================
+[  ] Meta Description 已添加
+[  ] Meta Keywords 已添加
+[  ] Open Graph 标签已添加
+[  ] Favicon 已设置
+[  ] SSL 证书已启用 (https://)
+[  ] Google Analytics 已添加 (如需要)
+
+====================================================================
+备注
+====================================================================
+总文件数: 28+ 个
+总大小: ~960 KB
+建议上传速度: 5 Mbps+
+预计上传时间: 2-5 分钟
+
+上线完成时间: ________________
+验证人员: ____________________
+备注: ________________________________________________________
+             ________________________________________________________
+             ________________________________________________________
+
+====================================================================

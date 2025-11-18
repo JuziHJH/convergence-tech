@@ -616,156 +616,270 @@ html {
 }
 
 /* Our Core Practices */
+/* Our Core - Based on Figma MCP node-id=4-97914 */
+/* Our Core - layout_MSKL09 */
 .our-core {
-    padding: var(--spacing-xxxl) var(--spacing-xl);
-    background: #E5E5E5; /* Neutral/20 from Figma */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    gap: 4px;
+    padding: 100px 80px;
+    
+    /* Sizing */
+    height: 758px;
+    
+    /* Fill & Stroke */
+    background: #F5F5F5; /* Neutral/20 */
+    border-top: 1px solid #EDEDED;
+    border-bottom: 0px;
+    
+    position: relative;
+    overflow: hidden;
 }
 
-.section-header {
-    text-align: center;
-    margin-bottom: var(--spacing-xxl);
+/* Background Pattern - layout_93F1VZ */
+.our-core-bg-pattern {
+    position: absolute;
+    left: -50px;
+    top: -24.2px;
+    width: 1540px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    opacity: 0.06; /* opacity from MCP: 0.05999999865889549 */
+    background-image: radial-gradient(circle, #101010 1px, transparent 1px);
+    background-size: 38.4px 38.4px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Container - layout_6IQ2RL */
+.our-core-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--spacing-sm);
+    align-self: stretch;
+    gap: 80px;
+    
+    position: relative;
+    z-index: 1;
 }
 
-.section-badge {
-    display: inline-flex;
+/* Section Header - layout_SWM0DZ */
+.section-header {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: var(--spacing-xs);
-    background: var(--color-white);
-    padding: 8px 16px;
-    border-radius: 100px;
-    /* Inter/Body/Large/16/Semibold from Figma */
+    gap: 20px;
+    width: 836px;
+}
+
+/* Label - style_W3LZNY */
+.section-label {
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: -0.05em;
+    text-transform: uppercase;
+    text-align: center;
     color: #0971DA; /* Primary/Main */
-    margin-bottom: var(--spacing-md);
+    margin: 0;
 }
 
-.section-badge img {
-    width: 16px;
-    height: 16px;
+/* Container - layout_415YA1 */
+.section-header-content {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    gap: 12px;
 }
 
+/* Title - Inter/Heading/H2/48/Medium */
 .section-title {
-    /* Inter/Heading/H2/48/Medium from Figma */
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 500;
     font-size: 48px;
-    line-height: 1.2em;
+    line-height: 1.2em; /* 1.2000000476837158em */
     letter-spacing: -0.05em;
+    text-align: center;
     color: #101010; /* Neutral/100 */
+    margin: 0;
 }
 
+/* Description - Inter/Heading/H6/18/Regular */
 .section-subtitle {
-    /* Inter/Heading/H6/18/Regular from Figma */
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.4em;
+    line-height: 1.4em; /* 1.3999999364217122em */
     letter-spacing: -0.05em;
-    color: #666666; /* Neutral/60 */
-    margin-top: var(--spacing-sm);
+    text-align: center;
+    color: #878787; /* Neutral/60 */
+    margin: 0;
 }
 
+/* Container - layout_UWDPC7 */
+.steps-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    gap: 24px;
+    padding: 20px;
+    
+    background: #FFFFFF; /* Neutral/10 */
+    border: 0.9px solid #EDEDED; /* Neutral/30 */
+    border-radius: 16px;
+}
+
+/* Steps - layout_ZG42HY */
 .steps-container {
-    max-width: 1440px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing-lg);
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+    align-self: stretch;
+    gap: 24px;
 }
 
+/* Step - layout_8R1G1L */
 .step {
-    background: var(--color-white);
-    border-radius: var(--radius-lg);
-    padding: var(--spacing-xl);
-    transition: all var(--transition-medium);
-    cursor: pointer;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    gap: 24px;
+    padding: 24px;
+    
+    /* Fill & Stroke */
+    background: #FFFFFF; /* Neutral/10 */
+    border: 2px solid #EDEDED; /* Neutral/30 */
+    border-radius: 16px;
+    
+    /* Effects */
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.06); /* Shadow */
+    
+    flex: 1;
     position: relative;
     overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.step::before {
-    content: '';
+/* Step Hover State - State=Hover fills: Neutral/100 strokes: Neutral/80 */
+.step:hover {
+    background: #101010; /* Neutral/100 */
+    border-color: #383838; /* Neutral/80 */
+}
+
+/* Background Pattern (shown on hover) - layout_GSRPF9 */
+.step-bg-pattern {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--color-dark);
+    left: -35px;
+    top: -23px;
+    width: 362px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
     opacity: 0;
-    transition: opacity var(--transition-medium);
+    background-image: radial-gradient(circle, #FFFFFF 1px, transparent 1px);
+    background-size: 38.4px 38.4px;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
     z-index: 0;
 }
 
-.step:hover::before {
-    opacity: 1;
+.step:hover .step-bg-pattern {
+    opacity: 0.08; /* opacity from MCP: 0.07999999821186066 */
 }
 
-.step-content {
+/* Arrow Container - layout_HY096N */
+.step-number {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 9px;
+    
+    width: 44px;
+    height: 44px;
+    
+    background: #101010; /* Neutral/100 for default */
+    border-radius: 16px;
+    
     position: relative;
     z-index: 1;
+    transition: background 0.3s ease;
+}
+
+.step:hover .step-number {
+    background: #FFFFFF; /* Neutral/10 on hover */
+}
+
+/* NumberOne/Two/Three/Four - layout_0T9C64 */
+.step-number img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* White color for default */
+    transition: filter 0.3s ease;
+}
+
+.step:hover .step-number img {
+    filter: none; /* Original color on hover */
+}
+
+/* Frame 107 - layout_FNB3CA */
+.step-content {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
+    align-self: stretch;
+    gap: 8px;
+    
+    position: relative;
+    z-index: 1;
 }
 
-.step-icon {
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--color-gray-light);
-    border-radius: var(--radius-sm);
-    transition: background var(--transition-medium);
-}
-
-.step:hover .step-icon {
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.step-icon img {
-    width: 28px;
-    height: 28px;
-    filter: brightness(0);
-    transition: filter var(--transition-medium);
-}
-
-.step:hover .step-icon img {
-    filter: brightness(0) invert(1);
-}
-
+/* Feature Title - Inter/Heading/H6/18/Medium */
 .step-title {
-    /* Inter/Heading/H6/18/Medium from Figma */
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 500;
     font-size: 18px;
-    line-height: 1.4em;
+    line-height: 1.4em; /* 1.3999999364217122em */
     letter-spacing: -0.05em;
-    color: #101010;
-    transition: color var(--transition-medium);
+    text-align: left;
+    color: #101010; /* Neutral/100 */
+    margin: 0;
+    transition: color 0.3s ease;
 }
 
 .step:hover .step-title {
-    color: var(--color-white);
+    color: #FFFFFF; /* Neutral/10 on hover */
 }
 
+/* Feature Description - Inter/Heading/H6/18/Regular */
 .step-description {
-    font-size: var(--font-size-base);
-    color: var(--color-gray-dark);
-    line-height: 1.6;
-    transition: color var(--transition-medium);
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4em; /* 1.3999999364217122em */
+    letter-spacing: -0.05em;
+    text-align: left;
+    color: #606060; /* Neutral/70 for default state */
+    margin: 0;
+    transition: color 0.3s ease;
 }
 
 .step:hover .step-description {
-    color: rgba(255, 255, 255, 0.8);
+    color: #C2C2C2; /* Neutral/50 on hover */
 }
 
 /* Why&Insight Section - Based on Figma MCP node-id=4-102566 */
@@ -1363,7 +1477,13 @@ html {
     }
     
     .steps-container {
-        grid-template-columns: repeat(2, 1fr);
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .step {
+        flex: 1 1 calc(50% - 12px);
+        min-width: 280px;
     }
     
     .why-card-container {

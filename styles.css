@@ -1520,19 +1520,44 @@ html {
     /* Auto layout - mode: none */
     /* Sizing - horizontal: fill, vertical: hug */
     
+    /* Dimensions from Figma */
+    width: 488.8px;
+    max-width: 100%; /* 响应式 */
+    height: auto; /* 自适应高度 */
+    
     /* Text style - style_J453T2 */
     font-family: 'JetBrains Mono', 'Courier New', monospace;
+    font-style: normal;
     font-weight: 400;
-    font-size: 16.799999237060547px;
-    line-height: 1.7000000454130648em; /* Exact from MCP */
+    font-size: 16.799999237060547px; /* 16.8px */
+    line-height: 170%; /* 1.7 或 28.56px */
     text-align: left;
     
-    /* Fills - Neutral/100 */
-    color: #101010;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
     
     margin: 0;
     white-space: pre-wrap;
     word-wrap: break-word;
+}
+
+/* Color Classes for Request Text Syntax Highlighting */
+.insight-request-text .text-green {
+    color: #23C81B; /* HTTP methods, domains, values */
+}
+
+.insight-request-text .text-blue {
+    color: #03A5EA; /* URLs, IDs, versions */
+}
+
+.insight-request-text .text-orange {
+    color: #EB600E; /* API keys, encoding methods */
+}
+
+.insight-request-text .text-black {
+    color: #101010; /* Default text */
 }
 
 .insight-content-image {

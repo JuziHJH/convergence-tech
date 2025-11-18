@@ -1,0 +1,14 @@
+<svg width="234" height="32" viewBox="0 0 234 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon part (based on Figma layout_VMK4XB) -->
+  <g transform="translate(2.18, 1.45)">
+    <!-- Blue circle background -->
+    <circle cx="14.975" cy="14.545" r="14.975" fill="#0971DA"/>
+    <!-- White C shape -->
+    <path d="M14.975 0C6.701 0 0 6.514 0 14.545C0 22.576 6.701 29.09 14.975 29.09V20.872C11.144 20.872 8.043 17.876 8.043 14.545C8.043 11.214 11.144 8.218 14.975 8.218V0Z" fill="white"/>
+    <!-- White inner circle -->
+    <circle cx="14.975" cy="14.545" r="5.99" fill="white"/>
+  </g>
+  
+  <!-- Text part (based on Figma layout_KZUN0C) -->
+  <text x="40.29" y="21.36" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF" letter-spacing="-0.8">Convergence Tech</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg width="249" height="34" viewBox="0 0 249 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon part (scaled proportionally) -->
+  <g transform="translate(2.32, 1.54)">
+    <!-- Blue circle background -->
+    <circle cx="15.92" cy="15.46" r="15.92" fill="#0971DA"/>
+    <!-- White C shape -->
+    <path d="M15.92 0C7.123 0 0 6.92 0 15.46C0 24 7.123 30.92 15.92 30.92V22.18C11.844 22.18 8.546 19.01 8.546 15.46C8.546 11.91 11.844 8.74 15.92 8.74V0Z" fill="white"/>
+    <!-- White inner circle -->
+    <circle cx="15.92" cy="15.46" r="6.368" fill="white"/>
+  </g>
+  
+  <!-- Text part (scaled proportionally) -->
+  <text x="42.81" y="22.73" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="17" font-weight="600" fill="#FFFFFF" letter-spacing="-0.85">Convergence Tech</text>
+</svg>

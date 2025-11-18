@@ -1,0 +1,13 @@
+<svg width="205" height="28" viewBox="0 0 205 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue circle background -->
+  <circle cx="14" cy="14" r="14" fill="#0971DA"/>
+  
+  <!-- White C shape (left part) -->
+  <path d="M14 0C6.26801 0 0 6.26801 0 14C0 21.732 6.26801 28 14 28V20C10.6863 20 8 17.3137 8 14C8 10.6863 10.6863 8 14 8V0Z" fill="white"/>
+  
+  <!-- White inner circle (right part) -->
+  <circle cx="14" cy="14" r="6" fill="white"/>
+  
+  <!-- Text: Convergence Tech -->
+  <text x="40" y="20" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="white" letter-spacing="-0.8">Convergence Tech</text>
+</svg>

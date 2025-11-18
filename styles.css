@@ -647,8 +647,8 @@ html {
     gap: 4px;
     padding: 100px 80px;
     
-    /* Sizing */
-    height: 758px;
+    /* Sizing - 高度自适应 */
+    min-height: 758px; /* 最小高度保持原有设计 */
     
     /* Fill & Stroke */
     background: #F5F5F5; /* Neutral/20 */
@@ -1274,16 +1274,16 @@ html {
     z-index: 5;
 }
 
-/* Container - layout_NH6XKD */
+/* Container - layout_DKT6X1 */
 .insight-container {
     /* Auto layout - mode: row, justifyContent: stretch, alignItems: stretch */
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
-    align-items: stretch;
+    justify-content: center; /* Align center */
+    align-items: center; /* Align center */
     align-self: stretch;
     
-    /* Spacing - from layout_NH6XKD */
+    /* Spacing - from layout_DKT6X1 */
     gap: 24px;
     
     /* Sizing - horizontal: fill, vertical: hug */
@@ -1292,13 +1292,14 @@ html {
     width: 100%;
 }
 
-/* Section - layout_UWA03Z */
+/* Section - layout_NMKMPW */
 .insight-section-content {
     /* Auto layout - mode: column */
     display: flex;
     flex-direction: column;
+    align-items: center; /* Align center */
     
-    /* Spacing - from layout_UWA03Z */
+    /* Spacing - from layout_NMKMPW */
     gap: 60px;
     
     /* Sizing - horizontal: fill, vertical: hug */
@@ -1318,32 +1319,33 @@ html {
     width: 628px;
 }
 
-/* Title Container - layout_9E0TGZ */
+/* Title Container - layout_5LZVAG */
 .insight-title-container {
     /* Auto layout - mode: column */
     display: flex;
     flex-direction: column;
     align-self: stretch;
+    align-items: flex-start; /* Align top left */
     
-    /* Spacing - from layout_9E0TGZ */
+    /* Spacing - from layout_5LZVAG */
     gap: 20px;
     
     /* Sizing - horizontal: fill, vertical: hug */
 }
 
-/* Label - layout_I3ZH9U, style_DKAAD3 */
+/* Label - layout_IAX8XF, style_NY9ZJH */
 .insight-label {
     /* Auto layout - mode: none */
     /* Sizing - horizontal: hug, vertical: hug */
     
-    /* Text style - style_DKAAD3 */
+    /* Text style - style_NY9ZJH */
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: -0.05em;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left; /* Align left */
     
     /* Fills - Primary/Main */
     color: #0971DA;
@@ -1402,13 +1404,14 @@ html {
     margin: 0;
 }
 
-/* Content Container - layout_SRY71O */
+/* Content Container - layout_Q1T118 */
 .insight-content-wrapper {
     /* Auto layout - mode: column */
     display: flex;
     flex-direction: column;
+    align-items: center; /* Align center */
     
-    /* Spacing - from layout_SRY71O */
+    /* Spacing - from layout_Q1T118 */
     gap: 4px;
     padding: 72px 0px 72px 72px;
     
@@ -1416,22 +1419,22 @@ html {
     flex: 1;
 }
 
-/* Main Container - layout_XQQHC7 */
+/* Main Container - layout_46UPXT */
 .insight-main-container {
     /* Auto layout - mode: column */
     display: flex;
     flex-direction: column;
     align-self: stretch;
     
-    /* Spacing - from layout_XQQHC7 */
+    /* Spacing - from layout_46UPXT */
     padding: 16.799999237060547px;
     
     /* Sizing - horizontal: fill, vertical: hug */
     
-    /* Fills - fill_TUGAQR */
+    /* Fills - fill_0EHIQX */
     background: rgba(255, 255, 255, 0.1);
     
-    /* Strokes - stroke_JIZR8T */
+    /* Strokes - stroke_CE3H2F */
     border: 1px solid transparent;
     background-image: 
         linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
@@ -1439,32 +1442,32 @@ html {
     background-origin: border-box;
     background-clip: padding-box, border-box;
     
-    /* Effects - effect_M7T5W2 */
+    /* Effects - effect_2JNKXS */
     backdrop-filter: blur(28px);
     
     /* Border radius */
     border-radius: 16.799999237060547px;
 }
 
-/* Content Container (inner) - layout_7BI9PA */
+/* Content Container (inner) - layout_QOWG5M */
 .insight-content-inner {
     /* Auto layout - mode: column */
     display: flex;
     flex-direction: column;
     align-self: stretch;
     
-    /* Spacing - from layout_7BI9PA */
+    /* Spacing - from layout_QOWG5M */
     gap: 12px;
     
     /* Sizing - horizontal: fill, vertical: hug */
 }
 
-/* Status Indicators - layout_LE88JJ */
+/* Status Indicators - layout_K5POK7 */
 .insight-status-indicators {
     /* Auto layout - mode: row */
     display: block;
     
-    /* Spacing - from layout_LE88JJ */
+    /* Spacing - from layout_K5POK7 */
     /* gap: 8px (handled in SVG) */
     
     /* Sizing - horizontal: hug, vertical: hug */
@@ -1472,7 +1475,7 @@ html {
     height: 12px;
 }
 
-/* Request Container - layout_8V6WT2 */
+/* Request Container - layout_6Q2TE2 */
 .insight-request-container {
     /* Auto layout - mode: column */
     display: flex;
@@ -1481,7 +1484,7 @@ html {
     
     /* Sizing - horizontal: fill, vertical: hug */
     
-    /* Strokes - stroke_2SY7R5 */
+    /* Strokes - stroke_PSLHJI */
     border: 1.399999976158142px solid transparent;
     background-image: 
         linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
@@ -1493,7 +1496,7 @@ html {
     border-radius: 11.199999809265137px;
 }
 
-/* Request Content - layout_XTPGS8 */
+/* Request Content - layout_4X8WP4 */
 .insight-request-content {
     /* Auto layout - mode: row, justifyContent: stretch, alignItems: stretch */
     display: flex;
@@ -1502,7 +1505,7 @@ html {
     align-items: stretch;
     align-self: stretch;
     
-    /* Spacing - from layout_XTPGS8 */
+    /* Spacing - from layout_4X8WP4 */
     gap: 5.599999904632568px;
     padding: 16.799999237060547px;
     
@@ -1511,57 +1514,27 @@ html {
     /* Fills - Neutral/10 */
     background: #FFFFFF;
     
-    /* Effects - effect_M7T5W2 */
+    /* Effects - effect_2JNKXS */
     backdrop-filter: blur(28px);
 }
 
-/* Request Text - layout_WIHWIE, style_FPFEAM */
-.insight-request-text {
+/* Request Text Image - layout_WCLVJM */
+.insight-request-text-image {
     /* Auto layout - mode: none */
-    /* Sizing - horizontal: fill, vertical: hug (from layout_WIHWIE) */
+    /* Sizing - horizontal: fill, vertical: hug */
     
-    /* Dimensions from Figma */
-    width: 488.8px;
-    max-width: 100%; /* 响应式 */
-    height: 464px; /* Fixed height from Figma */
-    overflow-y: auto; /* 允许滚动 */
-    
-    /* Text style - style_FPFEAM */
-    font-family: 'JetBrains Mono', 'Courier New', monospace;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16.8px; /* 16.799999237060547px */
-    line-height: 170%; /* 1.7 or 28.56px */
-    text-align: left;
-    
-    /* Fills - 使用绿色作为主色调 */
-    color: #23C81B;
+    /* Display as image */
+    display: block;
+    width: 100%;
+    max-width: 488.8px; /* Original width from Figma */
+    height: auto;
+    object-fit: contain;
     
     /* Inside auto layout */
     flex: none;
     order: 0;
+    align-self: stretch;
     flex-grow: 1;
-    
-    margin: 0;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-
-/* Color Classes for Request Text Syntax Highlighting */
-.insight-request-text .text-green {
-    color: #23C81B; /* HTTP methods, domains, values */
-}
-
-.insight-request-text .text-blue {
-    color: #03A5EA; /* URLs, IDs, versions */
-}
-
-.insight-request-text .text-orange {
-    color: #EB600E; /* API keys, encoding methods */
-}
-
-.insight-request-text .text-black {
-    color: #101010; /* Default text */
 }
 
 .insight-content-image {

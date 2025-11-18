@@ -650,22 +650,25 @@ html {
     padding: 0px;
     gap: 0px;
     
-    /* Position - exact from MCP */
+    /* Position - centered and fills Our Core module */
     position: absolute;
     left: 50%;
-    top: -24.2px;
+    top: 0;
+    bottom: 0;
     transform: translateX(-50%); /* Center align horizontally */
     
-    /* Sizing - exact from MCP */
-    width: 1540px;
-    height: auto; /* hug content as per MCP vertical sizing */
+    /* Sizing - responsive with max-width constraint */
+    width: 100%; /* Fill container width */
+    max-width: 2160px; /* Maximum width limit */
+    min-width: 1540px; /* Minimum width from MCP */
+    height: 100%; /* Fill container height */
     
     /* Visual - Using SVG pattern with exact MCP parameters */
     opacity: 0.06; /* exact from MCP: 0.05999999865889549 */
     background-image: url('assets/pattern-dot.svg');
     background-size: 38.4px 38.4px; /* Single pattern size from layout_QMYBVW */
     background-repeat: repeat;
-    background-position: center top;
+    background-position: center center; /* Center the pattern */
     pointer-events: none;
     z-index: 0;
 }

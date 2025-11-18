@@ -638,9 +638,9 @@ html {
     overflow: hidden;
 }
 
-/* Background Pattern - layout_93F1VZ */
+/* Background Pattern - layout_V8BWFT from Figma MCP */
 .our-core-bg-pattern {
-    /* Auto layout */
+    /* Auto layout - exact from MCP */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -648,21 +648,24 @@ html {
     align-items: flex-start;
     align-content: center;
     padding: 0px;
-    row-gap: 0px;
+    gap: 0px;
     
-    /* Position */
+    /* Position - exact from MCP */
     position: absolute;
-    left: -50px;
+    left: 50%;
     top: -24.2px;
-    width: 1540px;
-    height: 806.4px;
+    transform: translateX(-50%); /* Center align horizontally */
     
-    /* Visual - Using SVG pattern */
-    opacity: 0.06; /* opacity from MCP: 0.05999999865889549 */
+    /* Sizing - exact from MCP */
+    width: 1540px;
+    height: auto; /* hug content as per MCP vertical sizing */
+    
+    /* Visual - Using SVG pattern with exact MCP parameters */
+    opacity: 0.06; /* exact from MCP: 0.05999999865889549 */
     background-image: url('assets/pattern-dot.svg');
-    background-size: 38.4px 38.4px;
+    background-size: 38.4px 38.4px; /* Single pattern size from layout_QMYBVW */
     background-repeat: repeat;
-    background-position: 0 0;
+    background-position: center top;
     pointer-events: none;
     z-index: 0;
 }

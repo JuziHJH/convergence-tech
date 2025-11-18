@@ -71,6 +71,14 @@
 
 ---
 
+## Appearance 参数映射
+
+| 元素 | Border Radius | 用途 |
+|------|---------------|------|
+| Request Container | `12px` | 白色矩形圆角 |
+
+---
+
 ## Effect 参数映射
 
 | Figma MCP ID | CSS Value | 用途 |

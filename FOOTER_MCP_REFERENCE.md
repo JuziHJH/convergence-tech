@@ -37,14 +37,22 @@
 
 ## Background Pattern 参数
 
-| 参数 | 值 |
-|------|-----|
-| **位置** | `position: absolute; left: 0; top: -66.9px` |
-| **尺寸** | `width: 1440px` |
-| **透明度** | `opacity: 0.07999999821186066` |
-| **Pattern单元** | `38.4×38.4px` |
-| **背景图** | `pattern-dot-white.svg` |
-| **对齐** | `justify-content: center; flex-wrap: wrap` |
+**Node ID:** 4-120970  
+**Figma Link:** https://www.figma.com/design/OgG7go0gil6qtU9AQG3Qi4/CONVERGENCE-TECH_Deskdop?node-id=4-120970
+
+| 参数 | 值 | Figma MCP ID |
+|------|-----|--------------|
+| **类型** | `IMAGE-SVG` | - |
+| **位置** | `position: absolute; left: 0; top: -66.9px` | `layout_SZABGU` |
+| **尺寸** | `width: 1440px` | `layout_B1AA1Y` |
+| **透明度** | `opacity: 0.07999999821186066` | MCP精确值 |
+| **Pattern单元** | `38.4×38.4px` | `layout_MHQNE0` |
+| **圆点尺寸** | `r: 2.4px` | `layout_Q8USIN` |
+| **圆点位置** | `cx: 19.2, cy: 19.2` | 居中 |
+| **填充色** | `#FFFFFF` | `fill_1K7A8C` / `Neutral/10` |
+| **背景图** | `pattern-dot-white.svg` | - |
+| **对齐** | `justify-content: center; flex-wrap: wrap` | `mode: row` |
+| **背景定位** | `background-position: 0 0` | 左上对齐 |
 
 ---
 
@@ -129,6 +137,11 @@ opacity: 0.699999988079071
 
 .footer-links {
     gap: 40px; /* 从 88px 调整 */
+}
+
+.footer-bg-pattern {
+    width: 100%; /* 从 1440px 调整为全宽 */
+    top: -40px; /* 从 -66.9px 调整，移动端优化 */
 }
 
 .footer-bottom {

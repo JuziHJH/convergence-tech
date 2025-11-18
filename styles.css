@@ -1492,8 +1492,8 @@ html {
     background-origin: border-box;
     background-clip: padding-box, border-box;
     
-    /* Border radius */
-    border-radius: 11.199999809265137px;
+    /* Border radius - Appearance: 12 */
+    border-radius: 12px;
 }
 
 /* Request Content - layout_4X8WP4 */
@@ -1708,12 +1708,12 @@ html {
     max-width: 100%;
     height: auto;
     
-    /* Visual - Pattern 38.4×38.4 from layout_L549OT */
+    /* Visual - Pattern 38.4×38.4 from layout_B1AA1Y, layout_MHQNE0 */
     opacity: 0.07999999821186066; /* Exact opacity from MCP */
     background-image: url('assets/pattern-dot-white.svg');
     background-size: 38.4px 38.4px;
     background-repeat: repeat;
-    background-position: center top;
+    background-position: 0 0; /* Align to top-left */
     pointer-events: none;
     z-index: 0;
 }
@@ -2090,6 +2090,11 @@ html {
     
     .footer-links {
         gap: 40px;
+    }
+    
+    .footer-bg-pattern {
+        width: 100%;
+        top: -40px; /* Adjust offset for mobile */
     }
     
     .footer-bottom {

@@ -1665,61 +1665,292 @@ html {
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* Footer */
-.footer {
-    background: var(--color-dark);
-    color: var(--color-white);
-    padding: var(--spacing-xxl) var(--spacing-xl) var(--spacing-lg);
-}
+/* ========================================
+   Footer Section - Based on Figma MCP node-id=4-120969
+   严格按照Figma MCP参数制作
+   ======================================== */
 
-.footer-content {
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-.footer-main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: var(--spacing-xxl);
-    margin-bottom: var(--spacing-xl);
-}
-
-.footer-logo {
+/* Footer Section - layout_A42I2B */
+.footer-section {
+    /* Auto layout - mode: column */
     display: flex;
-    align-items: center;
-    margin-bottom: var(--spacing-md);
+    flex-direction: column;
+    align-self: stretch;
+    
+    /* Spacing - from layout_A42I2B */
+    padding: 56px 100px;
+    
+    /* Sizing - horizontal: fill, vertical: hug */
+    width: 100%;
+    
+    /* Fills - Neutral/100 */
+    background: #101010;
+    
+    position: relative;
+    overflow: hidden;
 }
 
-.footer-logo img {
+/* Background Pattern - layout_SZABGU */
+.footer-bg-pattern {
+    /* Auto layout - mode: row, justifyContent: center, wrap: true */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    /* Position - absolute, from layout_SZABGU */
+    position: absolute;
+    left: 0;
+    top: -66.9px; /* locationRelativeToParent y: -66.9 */
+    
+    /* Sizing - horizontal: fixed (1440), vertical: hug */
+    width: 1440px;
+    max-width: 100%;
+    height: auto;
+    
+    /* Visual - Pattern 38.4×38.4 from layout_L549OT */
+    opacity: 0.07999999821186066; /* Exact opacity from MCP */
+    background-image: url('assets/pattern-dot-white.svg');
+    background-size: 38.4px 38.4px;
+    background-repeat: repeat;
+    background-position: center top;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Container - layout_F8XNGY */
+.footer-container {
+    /* Auto layout - mode: column */
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    
+    /* Spacing - from layout_F8XNGY */
+    gap: 80px;
+    
+    /* Sizing - horizontal: fill, vertical: hug */
+    position: relative;
+    z-index: 1;
+}
+
+/* Footer Links - layout_H5FVB1 */
+.footer-links {
+    /* Auto layout - mode: row, justifyContent: space-between, wrap: true */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-wrap: wrap;
+    
+    /* Spacing - from layout_H5FVB1 */
+    gap: 88px;
+    
+    /* Sizing - horizontal: fill, vertical: hug */
+}
+
+/* Logo and Title - layout_RGXCXB */
+.footer-logo-title {
+    /* Auto layout - mode: column */
+    display: flex;
+    flex-direction: column;
+    
+    /* Spacing - from layout_RGXCXB */
+    gap: 24px;
+    
+    /* Sizing - horizontal: hug, vertical: hug */
+}
+
+/* Convergence Tech logo - layout_1Q1VV0 */
+.footer-logo {
+    /* Auto layout - mode: none */
+    /* Sizing - horizontal: fixed (249), vertical: fixed (34) */
     width: 249px;
-    height: 34px; /* Footer logo size from Figma */
+    height: 34px;
     object-fit: contain;
 }
 
-.footer-description {
-    font-size: var(--font-size-base);
-    color: rgba(255, 255, 255, 0.7);
-    line-height: 1.6;
+/* Title Container - layout_FT13OR */
+.footer-title-container {
+    /* Auto layout - mode: column */
+    display: flex;
+    flex-direction: column;
+    
+    /* Spacing - from layout_FT13OR */
+    gap: 4px;
+    
+    /* Sizing - horizontal: hug, vertical: hug */
 }
 
-.footer-column h4 {
-    font-size: var(--font-size-base);
-    font-weight: 600;
-    margin-bottom: var(--spacing-sm);
-    color: rgba(255, 255, 255, 0.6);
+/* Title Text - Inter/Body/Large/16/Medium, fill_TOWBDQ */
+.footer-title-text {
+    /* Auto layout - mode: none */
+    /* Sizing - horizontal: fill, vertical: hug */
+    
+    /* Text style - Inter/Body/Large/16/Medium */
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: -0.05em;
+    text-align: left;
+    
+    /* Fills - fill_TOWBDQ (#FFFFFF) */
+    color: #FFFFFF;
+    
+    margin: 0;
 }
 
-.footer-column p {
-    font-size: var(--font-size-lg);
-    color: var(--color-white);
+/* Title Subtitle - Inter/Body/Large/16/Medium, Neutral/50 */
+.footer-title-subtitle {
+    /* Auto layout - mode: none */
+    /* Sizing - horizontal: fill, vertical: hug */
+    
+    /* Text style - Inter/Body/Large/16/Medium */
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: -0.05em;
+    text-align: left;
+    
+    /* Fills - Neutral/50 */
+    color: #C2C2C2;
+    
+    margin: 0;
 }
 
+/* Menu - layout_RGXCXB */
+.footer-menu {
+    /* Auto layout - mode: column */
+    display: flex;
+    flex-direction: column;
+    
+    /* Spacing - from layout_RGXCXB */
+    gap: 24px;
+    
+    /* Sizing - horizontal: hug, vertical: hug */
+}
+
+/* Contact Title - Inter/Heading/H6/18/Medium, Neutral/10 */
+.footer-contact-title {
+    /* Auto layout - mode: none */
+    /* Sizing - horizontal: fill, vertical: hug */
+    
+    /* Text style - Inter/Heading/H6/18/Medium */
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.3999999364217122em;
+    letter-spacing: -0.05em;
+    text-align: left;
+    
+    /* Fills - Neutral/10 */
+    color: #FFFFFF;
+    
+    margin: 0;
+}
+
+/* Nav Links - layout_EWDIDP */
+.footer-nav-links {
+    /* Auto layout - mode: column */
+    display: flex;
+    flex-direction: column;
+    
+    /* Spacing - from layout_EWDIDP */
+    gap: 16px;
+    
+    /* Sizing - horizontal: hug, vertical: hug */
+}
+
+/* Email Link - Inter/Body/Large/16/Medium, Neutral/50 */
+.footer-email-link {
+    /* Auto layout - mode: none */
+    /* Sizing - horizontal: fill, vertical: hug */
+    
+    /* Text style - Inter/Body/Large/16/Medium */
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: -0.05em;
+    text-align: left;
+    
+    /* Fills - Neutral/50 */
+    color: #C2C2C2;
+    
+    text-decoration: none;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.footer-email-link:hover {
+    color: #FFFFFF;
+}
+
+/* Footer Bottom - layout_1E123Y */
 .footer-bottom {
-    padding-top: var(--spacing-lg);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    text-align: center;
-    font-size: var(--font-size-sm);
-    color: rgba(255, 255, 255, 0.5);
+    /* Auto layout - mode: row, justifyContent: stretch, alignItems: stretch, wrap: true */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    align-self: stretch;
+    flex-wrap: wrap;
+    
+    /* Spacing - from layout_1E123Y */
+    gap: 77px;
+    
+    /* Sizing - horizontal: fill, vertical: hug */
+}
+
+/* Copyright Left - Inter/Body/Large/16/Regular, Neutral/10, opacity: 0.7 */
+.footer-copyright-left {
+    /* Auto layout - mode: none */
+    /* Sizing - horizontal: fill, vertical: hug */
+    
+    /* Text style - Inter/Body/Large/16/Regular */
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: -0.05em;
+    text-align: left;
+    
+    /* Fills - Neutral/10 with opacity */
+    color: #FFFFFF;
+    opacity: 0.699999988079071; /* Exact opacity from MCP */
+    
+    margin: 0;
+}
+
+/* Copyright Right - Inter/Body/Large/16/Regular, Neutral/10, opacity: 0.7 */
+.footer-copyright-right {
+    /* Auto layout - mode: none */
+    /* Sizing - horizontal: fill, vertical: hug */
+    
+    /* Text style - Inter/Body/Large/16/Regular */
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: -0.05em;
+    text-align: right;
+    
+    /* Fills - Neutral/10 with opacity */
+    color: #FFFFFF;
+    opacity: 0.699999988079071; /* Exact opacity from MCP */
+    
+    margin: 0;
+}
+
+/* Remove old Footer styles */
+.footer,
+.footer-content,
+.footer-main,
+.footer-brand,
+.footer-description,
+.footer-column {
+    display: none;
 }
 
 /* Responsive Design - Based on Figma Baseline 1440px */
@@ -1851,6 +2082,23 @@ html {
     .why-section-title,
     .insight-section-title {
         font-size: 36px;
+    }
+    
+    .footer-section {
+        padding: 40px 24px;
+    }
+    
+    .footer-links {
+        gap: 40px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .footer-copyright-right {
+        text-align: left;
     }
     
     .intro-text {

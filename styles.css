@@ -1251,6 +1251,7 @@ html {
 }
 
 /* Insight. Innovation. Implementation. - layout_E0BBID */
+/* Insight. Innovation. Implementation. - layout_UN3DW0 */
 .insight-innovation-section {
     display: flex;
     flex-direction: column;
@@ -1259,9 +1260,10 @@ html {
     padding: 100px 80px;
     position: relative;
     z-index: 5;
+    width: 100%; /* 宽度自适应 */
 }
 
-/* Container - layout_VBQAIM */
+/* Container - layout_T1EHIU */
 .insight-container {
     display: flex;
     flex-direction: row;
@@ -1272,22 +1274,25 @@ html {
     max-width: 1440px;
     margin: 0 auto;
     width: 100%;
+    flex-wrap: wrap; /* 响应式换行 */
 }
 
-/* Section - layout_49XFX8 */
+/* Section - layout_RG7ZZE */
 .insight-section-content {
     display: flex;
     flex-direction: column;
     gap: 60px;
-    flex: 1;
+    flex: 1; /* fill from Figma */
+    min-width: 300px; /* 最小宽度避免过窄 */
 }
 
-/* Section Header - layout_73F9N2 */
+/* Section Header - layout_9BSIC5 */
 .insight-section-header {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    width: 628px;
+    max-width: 628px; /* 改为max-width响应式 */
+    width: 100%;
 }
 
 /* Title Container - layout_3478TV */
@@ -1344,13 +1349,93 @@ html {
     margin: 0;
 }
 
-/* Content Container - layout_C4035W */
+/* Content Container - layout_21BB2L */
 .insight-content-wrapper {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    padding: 72px 0px 72px 72px;
-    flex: 1;
+    padding: 72px 0px 72px 72px; /* Exact from Figma MCP */
+    flex: 1; /* fill from Figma */
+    min-width: 300px; /* 响应式最小宽度 */
+}
+
+/* Main Container - layout_2F5Y15 (layout_4DYGLP) */
+.insight-main-container {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    padding: 16.799999237060547px; /* Exact from Figma */
+    
+    /* Fill - fill_6J2O5B (fill_C623U6) */
+    background: rgba(255, 255, 255, 0.1);
+    
+    /* Stroke - stroke_N8WVGY (stroke_SU3COB) */
+    border: 1px solid transparent;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    
+    /* Effects - effect_J01PEW (effect_B87516) */
+    backdrop-filter: blur(28px);
+    border-radius: 16.799999237060547px;
+}
+
+/* Content Container - layout_UPFKO2 */
+.insight-content-inner {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    gap: 12px;
+}
+
+/* Status Indicators - layout_55V6X0 (layout_LY1WF9) */
+.insight-status-indicators {
+    display: block;
+    width: 44px;
+    height: 12px;
+}
+
+/* Request Container - layout_LHDUZ6 */
+.insight-request-container {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    
+    /* Stroke - stroke_YD3SR4 */
+    border: 1.399999976158142px solid transparent;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 11.199999809265137px;
+}
+
+/* Request Content - layout_XMLMZ1 */
+.insight-request-content {
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    gap: 5.599999904632568px;
+    padding: 16.799999237060547px;
+    
+    /* Fill - fill_FHIXMP */
+    background: #FFFFFF;
+}
+
+/* Request Text - JetBrains Mono style */
+.insight-request-text {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    font-weight: 400;
+    font-size: 16.799999237060547px;
+    line-height: 1.7000000454130648em;
+    text-align: left;
+    color: #101010; /* Neutral/100 for text on white bg */
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 .insight-content-image {

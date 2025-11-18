@@ -1,0 +1,9 @@
+<svg width="44" height="12" viewBox="0 0 44 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Status Indicators - 3 circles with 8px gap -->
+<!-- Circle 1 -->
+<circle cx="6" cy="6" r="6" fill="#F7F7F7"/>
+<!-- Circle 2 -->
+<circle cx="22" cy="6" r="6" fill="#F7F7F7"/>
+<!-- Circle 3 -->
+<circle cx="38" cy="6" r="6" fill="#F7F7F7"/>
+</svg>

@@ -1251,60 +1251,92 @@ html {
 }
 
 /* Insight. Innovation. Implementation. - layout_E0BBID */
-/* Insight. Innovation. Implementation. - layout_UN3DW0 */
+/* ========================================
+   Insight. Innovation. Implementation.
+   严格按照Figma MCP参数 (node-id=4-106923)
+   ======================================== */
+
+/* Insight. Innovation. Implementation. - layout_Q4B5QA */
 .insight-innovation-section {
+    /* Auto layout - mode: column */
     display: flex;
     flex-direction: column;
     align-self: stretch;
+    
+    /* Spacing - from layout_Q4B5QA */
     gap: 4px;
     padding: 100px 80px;
+    
+    /* Sizing - horizontal: fill, vertical: hug */
+    width: 100%;
+    
     position: relative;
     z-index: 5;
-    width: 100%; /* 宽度自适应 */
 }
 
-/* Container - layout_T1EHIU */
+/* Container - layout_NH6XKD */
 .insight-container {
+    /* Auto layout - mode: row, justifyContent: stretch, alignItems: stretch */
     display: flex;
     flex-direction: row;
     justify-content: stretch;
     align-items: stretch;
     align-self: stretch;
+    
+    /* Spacing - from layout_NH6XKD */
     gap: 24px;
+    
+    /* Sizing - horizontal: fill, vertical: hug */
     max-width: 1440px;
     margin: 0 auto;
     width: 100%;
-    flex-wrap: wrap; /* 响应式换行 */
 }
 
-/* Section - layout_RG7ZZE */
+/* Section - layout_UWA03Z */
 .insight-section-content {
+    /* Auto layout - mode: column */
     display: flex;
     flex-direction: column;
+    
+    /* Spacing - from layout_UWA03Z */
     gap: 60px;
-    flex: 1; /* fill from Figma */
-    min-width: 300px; /* 最小宽度避免过窄 */
+    
+    /* Sizing - horizontal: fill, vertical: hug */
+    flex: 1;
 }
 
-/* Section Header - layout_9BSIC5 */
+/* Section Header - layout_3CNZTL */
 .insight-section-header {
+    /* Auto layout - mode: column */
     display: flex;
     flex-direction: column;
+    
+    /* Spacing - from layout_3CNZTL */
     gap: 32px;
-    max-width: 628px; /* 改为max-width响应式 */
-    width: 100%;
+    
+    /* Sizing - horizontal: fixed (628), vertical: hug */
+    width: 628px;
 }
 
-/* Title Container - layout_3478TV */
+/* Title Container - layout_9E0TGZ */
 .insight-title-container {
+    /* Auto layout - mode: column */
     display: flex;
     flex-direction: column;
     align-self: stretch;
+    
+    /* Spacing - from layout_9E0TGZ */
     gap: 20px;
+    
+    /* Sizing - horizontal: fill, vertical: hug */
 }
 
-/* Label - style_FQZQC7 */
+/* Label - layout_I3ZH9U, style_DKAAD3 */
 .insight-label {
+    /* Auto layout - mode: none */
+    /* Sizing - horizontal: hug, vertical: hug */
+    
+    /* Text style - style_DKAAD3 */
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -1312,64 +1344,94 @@ html {
     letter-spacing: -0.05em;
     text-transform: uppercase;
     text-align: center;
-    color: #0971DA; /* Primary/Main */
+    
+    /* Fills - Primary/Main */
+    color: #0971DA;
+    
     margin: 0;
-    width: fit-content;
 }
 
-/* Text Container - layout_KUXFTT */
+/* Container (for Title + Description) - layout_7BI9PA */
 .insight-text-container {
+    /* Auto layout - mode: column */
     display: flex;
     flex-direction: column;
     align-self: stretch;
+    
+    /* Spacing - from layout_7BI9PA */
     gap: 12px;
+    
+    /* Sizing - horizontal: fill, vertical: hug */
 }
 
-/* Title - Inter/Heading/H2/48/Medium */
+/* Title - layout_OD25RO, Inter/Heading/H2/48/Medium */
 .insight-section-title {
+    /* Auto layout - mode: none */
+    /* Sizing - horizontal: fill, vertical: hug */
+    
+    /* Text style - Inter/Heading/H2/48/Medium */
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 500;
     font-size: 48px;
-    line-height: 1.2em;
+    line-height: 1.2000000476837158em; /* Exact from MCP */
     letter-spacing: -0.05em;
     text-align: left;
-    color: #FFFFFF; /* Neutral/10 */
+    
+    /* Fills - Neutral/10 */
+    color: #FFFFFF;
+    
     margin: 0;
 }
 
-/* Description - Inter/Heading/H6/18/Regular */
+/* Description - layout_OD25RO, Inter/Heading/H6/18/Regular */
 .insight-section-description {
+    /* Auto layout - mode: none */
+    /* Sizing - horizontal: fill, vertical: hug */
+    
+    /* Text style - Inter/Heading/H6/18/Regular */
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.4em;
+    line-height: 1.3999999364217122em; /* Exact from MCP */
     letter-spacing: -0.05em;
     text-align: left;
-    color: #FFFFFF; /* Neutral/10 */
+    
+    /* Fills - Neutral/10 */
+    color: #FFFFFF;
+    
     margin: 0;
 }
 
-/* Content Container - layout_21BB2L */
+/* Content Container - layout_SRY71O */
 .insight-content-wrapper {
+    /* Auto layout - mode: column */
     display: flex;
     flex-direction: column;
+    
+    /* Spacing - from layout_SRY71O */
     gap: 4px;
-    padding: 72px 0px 72px 72px; /* Exact from Figma MCP */
-    flex: 1; /* fill from Figma */
-    min-width: 300px; /* 响应式最小宽度 */
+    padding: 72px 0px 72px 72px;
+    
+    /* Sizing - horizontal: fill, vertical: hug */
+    flex: 1;
 }
 
-/* Main Container - layout_2F5Y15 (layout_4DYGLP) */
+/* Main Container - layout_XQQHC7 */
 .insight-main-container {
+    /* Auto layout - mode: column */
     display: flex;
     flex-direction: column;
     align-self: stretch;
-    padding: 16.799999237060547px; /* Exact from Figma */
     
-    /* Fill - fill_6J2O5B (fill_C623U6) */
+    /* Spacing - from layout_XQQHC7 */
+    padding: 16.799999237060547px;
+    
+    /* Sizing - horizontal: fill, vertical: hug */
+    
+    /* Fills - fill_TUGAQR */
     background: rgba(255, 255, 255, 0.1);
     
-    /* Stroke - stroke_N8WVGY (stroke_SU3COB) */
+    /* Strokes - stroke_JIZR8T */
     border: 1px solid transparent;
     background-image: 
         linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
@@ -1377,62 +1439,97 @@ html {
     background-origin: border-box;
     background-clip: padding-box, border-box;
     
-    /* Effects - effect_J01PEW (effect_B87516) */
+    /* Effects - effect_M7T5W2 */
     backdrop-filter: blur(28px);
+    
+    /* Border radius */
     border-radius: 16.799999237060547px;
 }
 
-/* Content Container - layout_UPFKO2 */
+/* Content Container (inner) - layout_7BI9PA */
 .insight-content-inner {
-    display: flex;
-    flex-direction: column;
-    align-self: stretch;
-    gap: 12px;
-}
-
-/* Status Indicators - layout_55V6X0 (layout_LY1WF9) */
-.insight-status-indicators {
-    display: block;
-    width: 44px;
-    height: 12px;
-}
-
-/* Request Container - layout_LHDUZ6 */
-.insight-request-container {
+    /* Auto layout - mode: column */
     display: flex;
     flex-direction: column;
     align-self: stretch;
     
-    /* Stroke - stroke_YD3SR4 */
+    /* Spacing - from layout_7BI9PA */
+    gap: 12px;
+    
+    /* Sizing - horizontal: fill, vertical: hug */
+}
+
+/* Status Indicators - layout_LE88JJ */
+.insight-status-indicators {
+    /* Auto layout - mode: row */
+    display: block;
+    
+    /* Spacing - from layout_LE88JJ */
+    /* gap: 8px (handled in SVG) */
+    
+    /* Sizing - horizontal: hug, vertical: hug */
+    width: 44px;
+    height: 12px;
+}
+
+/* Request Container - layout_8V6WT2 */
+.insight-request-container {
+    /* Auto layout - mode: column */
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    
+    /* Sizing - horizontal: fill, vertical: hug */
+    
+    /* Strokes - stroke_2SY7R5 */
     border: 1.399999976158142px solid transparent;
     background-image: 
         linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
         linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
+    
+    /* Border radius */
     border-radius: 11.199999809265137px;
 }
 
-/* Request Content - layout_XMLMZ1 */
+/* Request Content - layout_XTPGS8 */
 .insight-request-content {
+    /* Auto layout - mode: row, justifyContent: stretch, alignItems: stretch */
     display: flex;
     flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
     align-self: stretch;
+    
+    /* Spacing - from layout_XTPGS8 */
     gap: 5.599999904632568px;
     padding: 16.799999237060547px;
     
-    /* Fill - fill_FHIXMP */
+    /* Sizing - horizontal: fill, vertical: hug */
+    
+    /* Fills - Neutral/10 */
     background: #FFFFFF;
+    
+    /* Effects - effect_M7T5W2 */
+    backdrop-filter: blur(28px);
 }
 
-/* Request Text - JetBrains Mono style */
+/* Request Text - layout_OD25RO, style_J453T2 */
 .insight-request-text {
+    /* Auto layout - mode: none */
+    /* Sizing - horizontal: fill, vertical: hug */
+    
+    /* Text style - style_J453T2 */
     font-family: 'JetBrains Mono', 'Courier New', monospace;
     font-weight: 400;
     font-size: 16.799999237060547px;
-    line-height: 1.7000000454130648em;
+    line-height: 1.7000000454130648em; /* Exact from MCP */
     text-align: left;
-    color: #101010; /* Neutral/100 for text on white bg */
+    
+    /* Fills - Neutral/100 */
+    color: #101010;
+    
     margin: 0;
     white-space: pre-wrap;
     word-wrap: break-word;

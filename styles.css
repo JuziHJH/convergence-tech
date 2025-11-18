@@ -975,13 +975,14 @@ html {
     content: '';
     position: absolute;
     left: 0;
-    top: 0;
-    width: 1440px;
-    height: 1747px;
+    bottom: 0; /* 改为bottom定位,显示在容器底部 */
+    width: 100%;
+    height: 100%; /* 高度100%自适应 */
+    min-height: 600px; /* 最小高度确保渐变可见 */
     background-image: url('assets/bg-gradient-why-complete.svg');
-    background-size: 1440px 1747px;
+    background-size: cover; /* 使用cover完全覆盖,自适应缩放 */
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center bottom; /* 从底部居中 */
     z-index: 1;
     
     /* Additional layer blur effect for overall depth */
@@ -989,9 +990,11 @@ html {
     opacity: 1;
 }
 
-/* Background Pattern - layout_RFLKBR from Figma MCP */
+/* 移除超宽屏幕media query,统一使用cover */
+
+/* Background Pattern - layout_HF0ZPH from Figma MCP */
 .why-insight-bg-pattern {
-    /* Auto layout */
+    /* Auto layout - exact from MCP */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1001,26 +1004,30 @@ html {
     padding: 0px;
     gap: 0px;
     
-    /* Position - from Figma MCP layout_RFLKBR */
+    /* Position - centered and fills Why&Insight module */
     position: absolute;
-    left: -50px;
-    top: -164px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     
-    /* Sizing - fixed width from Figma, hug height */
-    width: 1540px;
-    height: auto;
+    /* Sizing - fully responsive, auto-adjusts pattern count */
+    width: 100%; /* Fill container width - fully adaptive */
+    max-width: 2160px; /* Maximum width limit */
+    height: 100%; /* Fill container height */
+    margin: 0 auto; /* Center the pattern container */
     
-    /* Visual - Using SVG pattern */
-    opacity: 0.07999999821186066; /* Exact opacity from Figma */
+    /* Visual - Using SVG pattern with exact MCP parameters */
+    opacity: 0.07999999821186066; /* Exact opacity from Figma MCP */
     background-image: url('assets/pattern-dot-white.svg');
-    background-size: 38.4px 38.4px;
+    background-size: 38.4px 38.4px; /* Single pattern size from Figma */
     background-repeat: repeat;
-    background-position: left top;
+    background-position: center center; /* Center the pattern */
     pointer-events: none;
-    z-index: 4;
+    z-index: 1;
 }
 
-/* Why Convergence Tech - layout_E0BBID */
+/* Why Convergence Tech - layout_ZWP68Y (layout_E0BBID) */
 .why-convergence-tech {
     display: flex;
     flex-direction: column;
@@ -1029,27 +1036,29 @@ html {
     padding: 100px 80px;
     position: relative;
     z-index: 5;
+    width: 100%; /* 宽度自适应 */
 }
 
-/* Container - layout_KF29JG */
+/* Container - layout_NW9MSI (layout_KF29JG) */
 .why-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-self: stretch;
     gap: 80px;
-    max-width: 1440px;
+    max-width: 1440px; /* 最大宽度限制 */
     margin: 0 auto;
-    width: 100%;
+    width: 100%; /* 宽度100%自适应 */
 }
 
-/* Section Header - layout_5195M9 */
+/* Section Header - layout_L1HCXI (layout_5195M9) */
 .why-section-header {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 784px;
+    max-width: 784px; /* 改为max-width实现响应式 */
+    width: 100%; /* 宽度自适应 */
 }
 
 /* Label - style_97C512 from Figma MCP */
@@ -1097,7 +1106,7 @@ html {
     margin: 0;
 }
 
-/* Card Container - layout_U7I9LP */
+/* Card Container - layout_IXRFKU (layout_U7I9LP) */
 .why-card-container {
     display: flex;
     flex-direction: row;
@@ -1105,9 +1114,11 @@ html {
     align-items: stretch;
     align-self: stretch;
     gap: 24px;
+    width: 100%; /* 宽度自适应 */
+    flex-wrap: wrap; /* 允许换行,小屏幕显示 */
 }
 
-/* Card Group - layout_UJS4EI */
+/* Card Group - layout_2PV8BC (layout_UJS4EI) */
 .why-card-group {
     display: flex;
     flex-direction: row;
@@ -1116,9 +1127,11 @@ html {
     align-self: stretch;
     gap: 24px;
     flex: 1;
+    min-width: 300px; /* 最小宽度避免过窄 */
+    flex-wrap: wrap; /* 小屏幕换行 */
 }
 
-/* Card - layout_JYVANU from Figma MCP */
+/* Card - layout_V23DQS from Figma MCP */
 .why-card {
     /* Auto layout */
     display: flex;
@@ -1127,10 +1140,11 @@ html {
     gap: 20px;
     padding: 24px;
     
-    /* Sizing - fill from Figma */
+    /* Sizing - fill from Figma, 响应式调整 */
     flex: 1;
+    min-width: 250px; /* 最小宽度,小屏幕友好 */
     
-    /* Fill - from fill_81E6G1 */
+    /* Fill - from fill_8EE3P1 */
     background: rgba(255, 255, 255, 0.04);
     
     /* Stroke - Gradient from Primary/LinearGradient */

@@ -1515,23 +1515,27 @@ html {
     backdrop-filter: blur(28px);
 }
 
-/* Request Text - layout_OD25RO, style_J453T2 */
+/* Request Text - layout_WIHWIE, style_FPFEAM */
 .insight-request-text {
     /* Auto layout - mode: none */
-    /* Sizing - horizontal: fill, vertical: hug */
+    /* Sizing - horizontal: fill, vertical: hug (from layout_WIHWIE) */
     
     /* Dimensions from Figma */
     width: 488.8px;
     max-width: 100%; /* 响应式 */
-    height: auto; /* 自适应高度 */
+    height: 464px; /* Fixed height from Figma */
+    overflow-y: auto; /* 允许滚动 */
     
-    /* Text style - style_J453T2 */
+    /* Text style - style_FPFEAM */
     font-family: 'JetBrains Mono', 'Courier New', monospace;
     font-style: normal;
     font-weight: 400;
-    font-size: 16.799999237060547px; /* 16.8px */
-    line-height: 170%; /* 1.7 或 28.56px */
+    font-size: 16.8px; /* 16.799999237060547px */
+    line-height: 170%; /* 1.7 or 28.56px */
     text-align: left;
+    
+    /* Fills - 使用绿色作为主色调 */
+    color: #23C81B;
     
     /* Inside auto layout */
     flex: none;

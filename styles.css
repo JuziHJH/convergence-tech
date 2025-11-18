@@ -657,10 +657,12 @@ html {
     width: 1540px;
     height: 806.4px;
     
-    /* Visual */
+    /* Visual - Using SVG pattern */
     opacity: 0.06; /* opacity from MCP: 0.05999999865889549 */
-    background-image: radial-gradient(circle, #101010 1px, transparent 1px);
+    background-image: url('assets/pattern-dot.svg');
     background-size: 38.4px 38.4px;
+    background-repeat: repeat;
+    background-position: 0 0;
     pointer-events: none;
     z-index: 0;
 }

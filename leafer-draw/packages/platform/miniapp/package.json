@@ -1,0 +1,41 @@
+{
+  "name": "@leafer-draw/miniapp",
+  "version": "1.10.1",
+  "description": "@leafer-draw/miniapp",
+  "author": "Chao (Leafer) Wan",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/miniapp.esm.min.js",
+  "exports": {
+    "import": "./dist/miniapp.esm.min.js",
+    "require": "./dist/miniapp.min.cjs",
+    "types": "./types/index.d.ts"
+  },
+  "types": "types/index.d.ts",
+  "unpkg": "dist/miniapp.esm.min.js",
+  "jsdelivr": "dist/miniapp.esm.min.js",
+  "files": ["src","types","dist"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leaferjs/leafer-draw.git"
+  },
+  "homepage": "https://github.com/leaferjs/leafer-draw/tree/main/packages/platform/miniapp",
+  "bugs": "https://github.com/leaferjs/leafer-draw/issues",
+  "keywords": [
+    "leafer draw miniapp",
+    "leafer-draw-miniapp",
+    "leafer-draw",
+    "leafer-ui",
+    "leaferjs"
+  ],
+  "dependencies": {
+    "@leafer/core": "1.10.1",
+    "@leafer/canvas-miniapp": "1.10.1",
+    "@leafer/image-miniapp": "1.10.1",
+    "@leafer-draw/partner": "1.10.1",
+    "@leafer-ui/draw": "1.10.1",
+    "@leafer-ui/partner": "1.10.1",
+    "@leafer-ui/interface": "1.10.1",
+    "@leafer-in/interface": "1.10.1"
+  }
+}

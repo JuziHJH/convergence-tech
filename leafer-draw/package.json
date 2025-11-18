@@ -1,0 +1,41 @@
+{
+  "name": "leafer-draw",
+  "version": "1.10.1",
+  "author": "Chao (Leafer) Wan",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/web.esm.min.js",
+  "exports": {
+    "import": "./dist/web.esm.min.js",
+    "require": "./dist/web.min.cjs",
+    "types": "./types/index.d.ts"
+  },
+  "types": "types/index.d.ts",
+  "unpkg": "dist/web.min.js",
+  "jsdelivr": "dist/web.min.js",
+  "files": ["src","types","dist"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leaferjs/leafer-draw.git"
+  },
+  "homepage": "https://github.com/leaferjs/leafer-draw",
+  "bugs": "https://github.com/leaferjs/leafer-draw/issues",
+  "keywords": [
+    "leafer draw",
+    "leafer-draw",
+    "leaferui",
+    "leafer-ui",
+    "leaferjs",
+    "leafer",
+    "html5",
+    "canvas",
+    "2d",
+    "graphic",
+    "renderer",
+    "engine"
+  ],
+  "dependencies": {
+    "@leafer-draw/web": "1.10.1",
+    "@leafer-ui/draw": "1.10.1"
+  }
+}

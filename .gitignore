@@ -16,3 +16,9 @@ npm-debug.log*
 # Temporary files
 *.tmp
 *.temp
+
+# Backup folders
+PLAN1_BACKUP/
+PLAN2_BACKUP/
+PLAN3_BACKUP/
+*_BACKUP/

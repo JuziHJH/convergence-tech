@@ -833,8 +833,30 @@ html {
     transition: filter 0.3s ease;
 }
 
+/* Hover state - show original icon color on white background */
 .step:hover .step-number img {
-    filter: none; /* Original color on hover */
+    filter: none; /* Original color on hover - removes white filter */
+}
+
+/* Specific hover styles for each step number icon */
+/* Step 1 keeps number-one.svg in both states */
+.step[data-step="1"] .step-number img {
+    content: url('assets/number-one.svg');
+}
+
+/* Step 2: Default shows number-two.svg (white), Hover shows number-two.svg (colored) */
+.step[data-step="2"] .step-number img {
+    content: url('assets/number-two.svg');
+}
+
+/* Step 3: Default shows number-three.svg (white), Hover shows number-three.svg (colored) */
+.step[data-step="3"] .step-number img {
+    content: url('assets/number-three.svg');
+}
+
+/* Step 4: Default shows number-four.svg (white), Hover shows number-four.svg (colored) */
+.step[data-step="4"] .step-number img {
+    content: url('assets/number-four.svg');
 }
 
 /* Frame 107 - layout_FNB3CA */

@@ -958,7 +958,7 @@ html {
     overflow: hidden;
 }
 
-/* Background Gradient - Three Shapes from Figma MCP */
+/* Background Gradient - SVG with Layer Blur Effects */
 .why-insight-bg-gradient {
     position: absolute;
     left: 0;
@@ -967,53 +967,29 @@ html {
     height: 100%;
     pointer-events: none;
     z-index: 0;
+    overflow: visible;
 }
 
-/* Shape 1 - #032241 with blur(384px) - SVG Implementation */
+/* SVG Background with 3 Shapes and Layer Blur */
 .why-insight-bg-gradient::before {
     content: '';
     position: absolute;
-    width: 2549.18px;
-    height: 2166.63px;
-    left: 813.88px;
-    top: 768.16px;
-    background-image: url('assets/bg-gradient-shape1.svg');
-    background-size: contain;
+    left: 0;
+    top: 0;
+    width: 1440px;
+    height: 1747px;
+    background-image: url('assets/bg-gradient-why-complete.svg');
+    background-size: 1440px 1747px;
     background-repeat: no-repeat;
+    background-position: center top;
     z-index: 1;
+    
+    /* Additional layer blur effect for overall depth */
+    filter: blur(0px);
+    opacity: 1;
 }
 
-/* Shape 2 - #054483 with blur(192px) and matrix transform */
-.why-insight-bg-gradient::after {
-    content: '';
-    position: absolute;
-    width: 2452.62px;
-    height: 2943.34px;
-    left: 1325.73px;
-    top: 1214.82px;
-    background: #054483;
-    filter: blur(192px);
-    transform: matrix(0.85, -0.53, 0.66, 0.75, 0, 0);
-    z-index: 2;
-}
-
-/* Shape 3 - #FFFFFF with blur(256px) and rotation */
-.why-insight-section::before {
-    content: '';
-    position: absolute;
-    width: 2545.92px;
-    height: 1916.16px;
-    left: 1634.57px;
-    top: 1703.84px;
-    background: #FFFFFF;
-    filter: blur(256px);
-    border-radius: 38.4px;
-    transform: rotate(-21deg);
-    pointer-events: none;
-    z-index: 3;
-}
-
-/* Background Pattern - layout_M97JOL */
+/* Background Pattern - layout_RFLKBR from Figma MCP */
 .why-insight-bg-pattern {
     /* Auto layout */
     display: flex;
@@ -1025,25 +1001,21 @@ html {
     padding: 0px;
     gap: 0px;
     
-    /* Position - centered and fills Why&Insight section */
+    /* Position - from Figma MCP layout_RFLKBR */
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    left: -50px;
+    top: -164px;
     
-    /* Sizing - fully responsive, auto-adjusts pattern count */
-    width: 100%; /* Fill container width - fully adaptive */
-    max-width: 2160px; /* Maximum width limit */
-    height: 100%; /* Fill container height - auto adapt */
-    margin: 0 auto; /* Center the pattern container */
+    /* Sizing - fixed width from Figma, hug height */
+    width: 1540px;
+    height: auto;
     
     /* Visual - Using SVG pattern */
-    opacity: 0.08; /* Exact opacity from Figma */
+    opacity: 0.07999999821186066; /* Exact opacity from Figma */
     background-image: url('assets/pattern-dot-white.svg');
     background-size: 38.4px 38.4px;
     background-repeat: repeat;
-    background-position: center center;
+    background-position: left top;
     pointer-events: none;
     z-index: 4;
 }

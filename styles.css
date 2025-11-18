@@ -865,6 +865,12 @@ html {
 /* Step 4: Default shows number-four.svg (white), Hover shows number-four.svg (colored) */
 .step[data-step="4"] .step-number img {
     content: url('assets/number-four.svg');
+    /* Vector positioning based on Figma MCP data */
+    position: relative;
+    /* Adjust display to match Figma vector constraints:
+       left: 23.44%, right: 26.56%, top: 10.73%, bottom: 14.06% */
+    object-fit: contain;
+    object-position: center;
 }
 
 /* Frame 107 - layout_FNB3CA */

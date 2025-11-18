@@ -272,16 +272,16 @@ html {
     
     /* Position - centered and fills Landing Page */
     position: absolute;
-    left: 50%;
+    left: 0;
+    right: 0;
     top: 0;
     bottom: 0;
-    transform: translateX(-50%); /* Center align horizontally */
     
-    /* Sizing - responsive with max-width constraint */
-    width: 100%; /* Fill container width */
+    /* Sizing - fully responsive, auto-adjusts pattern count */
+    width: 100%; /* Fill container width - fully adaptive */
     max-width: 2160px; /* Maximum width limit */
-    min-width: 1540px; /* Minimum width from Figma */
     height: 100%; /* Fill container height - auto adapt */
+    margin: 0 auto; /* Center the pattern container */
     
     /* Visual - Using SVG pattern */
     opacity: 0.08; /* Exact opacity from Figma: 0.07999999821186066 */
@@ -673,16 +673,16 @@ html {
     
     /* Position - centered and fills Our Core module */
     position: absolute;
-    left: 50%;
+    left: 0;
+    right: 0;
     top: 0;
     bottom: 0;
-    transform: translateX(-50%); /* Center align horizontally */
     
-    /* Sizing - responsive with max-width constraint */
-    width: 100%; /* Fill container width */
+    /* Sizing - fully responsive, auto-adjusts pattern count */
+    width: 100%; /* Fill container width - fully adaptive */
     max-width: 2160px; /* Maximum width limit */
-    min-width: 1540px; /* Minimum width from MCP */
     height: 100%; /* Fill container height */
+    margin: 0 auto; /* Center the pattern container */
     
     /* Visual - Using SVG pattern with exact MCP parameters */
     opacity: 0.06; /* exact from MCP: 0.05999999865889549 */
@@ -1025,16 +1025,16 @@ html {
     
     /* Position - centered and fills Why&Insight section */
     position: absolute;
-    left: 50%;
+    left: 0;
+    right: 0;
     top: 0;
     bottom: 0;
-    transform: translateX(-50%); /* Center align horizontally */
     
-    /* Sizing - responsive with max-width constraint */
-    width: 100%; /* Fill container width */
+    /* Sizing - fully responsive, auto-adjusts pattern count */
+    width: 100%; /* Fill container width - fully adaptive */
     max-width: 2160px; /* Maximum width limit */
-    min-width: 1540px; /* Minimum width from Figma */
     height: 100%; /* Fill container height - auto adapt */
+    margin: 0 auto; /* Center the pattern container */
     
     /* Visual - Using SVG pattern */
     opacity: 0.08; /* Exact opacity from Figma */

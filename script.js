@@ -9,20 +9,12 @@ function scrollToSection(sectionId) {
     }
 }
 
-// FAQ Toggle Function
+// FAQ Toggle Function - Independent toggle (no auto-close)
 function toggleFAQ(faqNumber) {
-    const faqItem = document.querySelector(`.faq-item[data-faq="${faqNumber}"]`);
-    const allFaqItems = document.querySelectorAll('.faq-item');
+    const faqItem = document.querySelector(`.faq-v1-item[data-faq="${faqNumber}"]`);
     
-    // Close all other FAQs
-    allFaqItems.forEach(item => {
-        if (item !== faqItem) {
-            item.classList.remove('active');
-        }
-    });
-    
-    // Toggle current FAQ
-    faqItem.classList.toggle('active');
+    // Toggle current FAQ only
+    faqItem.classList.toggle('faq-v1-active');
 }
 
 // Header scroll effect
@@ -54,7 +46,7 @@ const observer = new IntersectionObserver(function(entries) {
 
 // Observe sections for fade-in animation
 document.addEventListener('DOMContentLoaded', function() {
-    const sections = document.querySelectorAll('.introduction-page, .our-core, .why-convergence, .insight-section, .faqs-section');
+    const sections = document.querySelectorAll('.introduction-page, .our-core, .why-convergence, .insight-section, .faqs-v1-section');
     
     sections.forEach(section => {
         section.style.opacity = '0';
@@ -117,7 +109,7 @@ function toggleMobileMenu() {
 }
 
 // Add keyboard accessibility for FAQs
-document.querySelectorAll('.faq-question').forEach(question => {
+document.querySelectorAll('.faq-v1-question').forEach(question => {
     question.setAttribute('tabindex', '0');
     question.setAttribute('role', 'button');
     question.setAttribute('aria-expanded', 'false');
@@ -133,9 +125,9 @@ document.querySelectorAll('.faq-question').forEach(question => {
 // Update aria-expanded when FAQ is toggled
 const originalToggleFAQ = window.toggleFAQ;
 window.toggleFAQ = function(faqNumber) {
-    const faqItem = document.querySelector(`.faq-item[data-faq="${faqNumber}"]`);
-    const question = faqItem.querySelector('.faq-question');
-    const isActive = faqItem.classList.contains('active');
+    const faqItem = document.querySelector(`.faq-v1-item[data-faq="${faqNumber}"]`);
+    const question = faqItem.querySelector('.faq-v1-question');
+    const isActive = faqItem.classList.contains('faq-v1-active');
     
     originalToggleFAQ(faqNumber);
     

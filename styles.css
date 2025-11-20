@@ -1518,6 +1518,9 @@ html {
     /* Fills - Neutral/10 */
     background: #FFFFFF;
     
+    /* Border radius - inherit from parent container */
+    border-radius: 12px;
+    
     /* Effects - effect_2JNKXS */
     backdrop-filter: blur(28px);
 }
@@ -1566,107 +1569,318 @@ html {
 }
 
 /* FAQs Section */
-.faqs-section {
-    padding: var(--spacing-xxxl) var(--spacing-xl);
-    background: var(--color-white);
+/* ========================================
+   FAQs V1 Section - Based on Figma MCP node-id=4-115785
+   严格按照Figma MCP参数制作
+   ======================================== */
+
+/* FAQs V1 Section - layout_OR6GUM */
+.faqs-v1-section {
+    /* Auto layout - mode: column */
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    
+    /* Spacing - gap: 4px, padding: 100px 189px */
+    gap: 4px;
+    padding: 100px 189px;
+    
+    /* Sizing - horizontal: fill, vertical: hug */
+    width: 100%;
+    
+    /* Fills - Neutral/10 */
+    background: #FFFFFF;
 }
 
-.faqs-container {
-    max-width: 900px;
+/* Container - layout_PXXSVJ */
+.faqs-v1-container {
+    /* Auto layout - mode: column */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    
+    /* Spacing - gap: 80px */
+    gap: 80px;
+    
+    /* Sizing - horizontal: fill, vertical: hug */
+    width: 100%;
+    
+    /* Max width constraint */
+    max-width: 1060px;
     margin: 0 auto;
 }
 
-.faqs-header {
-    text-align: center;
-    margin-bottom: var(--spacing-xxl);
+/* Section Header - layout_R1R3ZD */
+.faqs-section-header {
+    /* Auto layout - mode: column */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    
+    /* Spacing - gap: 20px */
+    gap: 20px;
+    
+    /* Sizing - horizontal: fill, vertical: hug */
+    width: 100%;
 }
 
-.section-subtitle {
-    /* Inter/Heading/H6/18/Regular from Figma */
+/* Section Label - Inter/Body/Large/16/Semibold, Primary/Main */
+.faqs-section-label {
+    /* Text style - Inter/Body/Large/16/Semibold */
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: -0.05em;
+    text-align: center;
+    
+    /* Fills - Primary/Main */
+    color: #0971DA;
+}
+
+/* Section Content - layout_Z3P59E */
+.faqs-section-content {
+    /* Auto layout - mode: column */
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    
+    /* Spacing - gap: 12px */
+    gap: 12px;
+    
+    /* Sizing - horizontal: fill, vertical: hug */
+    width: 100%;
+}
+
+/* Section Title - Inter/Heading/H2/48/Medium, Neutral/100 */
+.faqs-section-title {
+    /* Text style - Inter/Heading/H2/48/Medium */
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.2000000476837158em;
+    letter-spacing: -0.05000000000000001em;
+    text-align: center;
+    
+    /* Fills - Neutral/100 */
+    color: #101010;
+    
+    margin: 0;
+}
+
+/* Section Description - Inter/Heading/H6/18/Regular, Neutral/60 */
+.faqs-section-description {
+    /* Text style - Inter/Heading/H6/18/Regular */
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.4em;
+    line-height: 1.3999999364217122em;
     letter-spacing: -0.05em;
-    color: #666666; /* Neutral/60 */
-    margin-top: var(--spacing-sm);
+    text-align: center;
+    
+    /* Fills - Neutral/60 */
+    color: #878787;
+    
+    margin: 0;
 }
 
-.faq-list {
+/* FAQ List Container - layout_41BR21 */
+.faqs-list-container {
+    /* Auto layout - mode: column */
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
+    align-self: stretch;
+    
+    /* Spacing - gap: 28px, padding: 16px */
+    gap: 28px;
+    padding: 16px;
+    
+    /* Sizing - horizontal: fill, vertical: hug */
+    width: 100%;
+    
+    /* Fills - fill_E8HJI1 */
+    background: #F7F7F7;
+    
+    /* Strokes - stroke_0QZQS6 */
+    border: 1px solid #EDEDED;
+    
+    /* Border radius - 20px */
+    border-radius: 20px;
 }
 
-.faq-item {
-    background: var(--color-white);
-    border: 1px solid var(--color-gray-medium);
-    border-radius: var(--radius-md);
-    overflow: hidden;
-    transition: all var(--transition-fast);
-}
-
-.faq-item.active {
-    background: var(--color-dark);
-    border-color: var(--color-dark);
-}
-
-.faq-question {
-    padding: var(--spacing-lg);
+/* FAQ V1 Item - layout_YS2JN8 */
+.faq-v1-item {
+    /* Auto layout - mode: column */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-self: stretch;
+    position: relative;
+    
+    /* Spacing - gap: 8px, padding: 24px */
+    gap: 8px;
+    padding: 24px;
+    
+    /* Sizing - horizontal: fill, vertical: hug */
+    width: 100%;
+    
+    /* Fills - Neutral/10 (inactive state) */
+    background: #FFFFFF;
+    
+    /* Strokes - Neutral/30 */
+    border: 1px solid #EDEDED;
+    
+    /* Border radius - 16px */
+    border-radius: 16px;
+    
+    /* Transition */
+    transition: all 0.3s ease;
+    
+    /* Cursor */
     cursor: pointer;
-    /* Inter/Heading/H6/18/Medium from Figma */
+}
+
+/* FAQ V1 Item - Active State */
+.faq-v1-item.faq-v1-active {
+    /* Fills - Neutral/100 */
+    background: #101010;
+    
+    /* Strokes - Neutral/30 */
+    border: 1px solid #EDEDED;
+    
+    /* Effects - Shadow */
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.06);
+}
+
+/* Feature Title Container - layout_VQN3BD */
+.faq-v1-question {
+    /* Auto layout - mode: row */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: stretch;
+    
+    /* Spacing - gap: 8px */
+    gap: 8px;
+    
+    /* Sizing - horizontal: fill, vertical: hug */
+    width: 100%;
+    
+    /* Cursor */
+    cursor: pointer;
+    
+    /* Position */
+    position: relative;
+    z-index: 1;
+}
+
+/* Question Text - Inter/Heading/H5/24/Medium */
+.faq-v1-question-text {
+    /* Flex */
+    flex: 1;
+    
+    /* Text style - Inter/Heading/H5/24/Medium */
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 1.4em;
-    letter-spacing: -0.05em;
-    transition: all var(--transition-fast);
+    font-size: 24px;
+    line-height: 1.3999999364217122em;
+    letter-spacing: -0.05000000000000001em;
+    text-align: left;
+    
+    /* Fills - Neutral/100 (inactive) */
+    color: #101010;
+    
+    /* Transition */
+    transition: color 0.3s ease;
 }
 
-.faq-item.active .faq-question {
-    color: var(--color-white);
+/* Question Text - Active State */
+.faq-v1-active .faq-v1-question-text {
+    /* Fills - Neutral/10 (white) */
+    color: #FFFFFF;
 }
 
-.faq-icon {
-    width: 24px;
-    height: 24px;
-    transition: transform var(--transition-fast);
+/* FAQ Icon - layout_YEMM03 */
+.faq-v1-icon {
+    /* Dimensions - 32x32 */
+    width: 32px;
+    height: 32px;
+    
+    /* Flex - fixed size */
+    flex-shrink: 0;
+    
+    /* Transition */
+    transition: opacity 0.3s ease;
 }
 
-.faq-item.active .faq-icon-down {
+/* Icon visibility control */
+.faq-v1-item:not(.faq-v1-active) .faq-v1-icon-up {
     display: none;
 }
 
-.faq-item.active .faq-icon-up {
-    display: block !important;
+.faq-v1-item.faq-v1-active .faq-v1-icon-down {
+    display: none;
 }
 
-.faq-answer {
+.faq-v1-item.faq-v1-active .faq-v1-icon-up {
+    display: block;
+}
+
+/* Answer - Inter/Heading/H6/18/Regular, Neutral/50 */
+.faq-v1-answer {
+    /* Layout - layout_D1K0P7 */
+    /* Sizing - horizontal: fill, vertical: hug */
+    width: 100%;
+    
+    /* Position */
+    position: relative;
+    z-index: 1;
+    
+    /* Initial state - hidden */
     max-height: 0;
     overflow: hidden;
-    transition: max-height var(--transition-medium);
+    opacity: 0;
+    
+    /* Transition */
+    transition: all 0.3s ease;
 }
 
-.faq-item.active .faq-answer {
-    max-height: 300px;
+/* Answer - Active State */
+.faq-v1-active .faq-v1-answer {
+    max-height: 200px;
+    opacity: 1;
 }
 
-.faq-answer p {
-    padding: 0 var(--spacing-lg) var(--spacing-lg);
-    /* Inter/Body/Medium/14/Regular from Figma */
+/* Answer Text */
+.faq-v1-answer p {
+    /* Text style - Inter/Heading/H6/18/Regular */
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.6em;
+    font-size: 18px;
+    line-height: 1.3999999364217122em;
     letter-spacing: -0.05em;
-    color: #666666;
+    text-align: left;
+    
+    /* Fills - Neutral/50 */
+    color: #C2C2C2;
+    
+    margin: 0;
 }
 
-.faq-item.active .faq-answer p {
-    color: rgba(255, 255, 255, 0.8);
+/* ========================================
+   Remove Old FAQ Styles
+   ======================================== */
+.faqs-section,
+.faqs-container,
+.faqs-header,
+.section-subtitle,
+.faq-list,
+.faq-item,
+.faq-question,
+.faq-icon,
+.faq-answer {
+    display: none;
 }
 
 /* ========================================
@@ -1708,13 +1922,12 @@ html {
     top: -66.9px; /* locationRelativeToParent y: -66.9 */
     
     /* Sizing - horizontal: fixed (1440), vertical: hug */
-    width: 1440px;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
     
-    /* Visual - Pattern 38.4×38.4 from layout_B1AA1Y, layout_MHQNE0 */
+    /* Visual - Pattern 38.4×38.4 (39×39 viewBox) */
     opacity: 0.07999999821186066; /* Exact opacity from MCP */
-    background-image: url('assets/pattern-dot-white.svg');
+    background-image: url('assets/footer-pattern.svg');
     background-size: 38.4px 38.4px;
     background-repeat: repeat;
     background-position: 0 0; /* Align to top-left */

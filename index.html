@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convergence Tech Singapore</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -298,45 +299,72 @@ Our consultants work closely with clients to define direction, unlock new market
         </div>
     </section>
 
-    <!-- FAQs Section -->
-    <section class="faqs-section" id="faqs">
-        <div class="faqs-container">
-            <div class="faqs-header">
-                <div class="section-badge">
-                    <img src="assets/CodeBubbyAssets/1_20703/52.svg" alt="Icon">
-                    <span>FAQs</span>
+    <!-- FAQs V1 Section - Based on Figma MCP node-id=4-115785 -->
+    <section class="faqs-v1-section" id="faqs">
+        <!-- Container - layout_PXXSVJ -->
+        <div class="faqs-v1-container">
+            <!-- Section Header - layout_R1R3ZD -->
+            <div class="faqs-section-header">
+                <!-- Section Label - Inter/Body/Large/16/Semibold, Primary/Main -->
+                <div class="faqs-section-label">FAQs</div>
+                <!-- Section Content - layout_Z3P59E -->
+                <div class="faqs-section-content">
+                    <!-- Section Title - Inter/Heading/H2/48/Medium, Neutral/100 -->
+                    <h2 class="faqs-section-title">Frequently Asked Questions</h2>
+                    <!-- Section Description - Inter/Heading/H6/18/Regular, Neutral/60 -->
+                    <p class="faqs-section-description">Instant help, at your fingertips.</p>
                 </div>
-                <h2 class="section-title">Frequently Asked Questions</h2>
-                <p class="section-subtitle">Instant help, at your fingertips.</p>
             </div>
-            <div class="faq-list">
-                <div class="faq-item" data-faq="1">
-                    <div class="faq-question" onclick="toggleFAQ(1)">
-                        <span>What types of clients does Convergence Tech work with?</span>
-                        <img src="assets/CodeBubbyAssets/1_20703/53.svg" class="faq-icon faq-icon-down" alt="Expand">
-                        <img src="assets/CodeBubbyAssets/1_20703/54.svg" class="faq-icon faq-icon-up" alt="Collapse" style="display: none;">
+            
+            <!-- FAQ Container - layout_41BR21 -->
+            <div class="faqs-list-container">
+                <!-- FAQ Item 1 - State=Inactive -->
+                <div class="faq-v1-item" data-faq="1">
+                    <!-- Feature Title Container - layout_VQN3BD -->
+                    <div class="faq-v1-question" onclick="toggleFAQ(1)">
+                        <!-- Question - Inter/Heading/H5/24/Medium, Neutral/100 -->
+                        <span class="faq-v1-question-text">What types of clients does Convergence Tech work with?</span>
+                        <!-- CaretDown Icon - layout_YEMM03 (32x32) -->
+                        <img src="assets/caret-down.svg" class="faq-v1-icon faq-v1-icon-down" alt="Expand">
+                        <!-- CaretUp Icon - layout_YEMM03 (32x32) -->
+                        <img src="assets/caret-up.svg" class="faq-v1-icon faq-v1-icon-up" alt="Collapse">
                     </div>
-                    <div class="faq-answer">
+                    <!-- Answer - Inter/Heading/H6/18/Regular, Neutral/50 -->
+                    <div class="faq-v1-answer">
                         <p>We partner with growth-driven companies across sectors such as finance, technology, retail, and manufacturing.</p>
                     </div>
                 </div>
-                <div class="faq-item" data-faq="2">
-                    <div class="faq-question" onclick="toggleFAQ(2)">
-                        <span>How does Convergence Tech integrate AI into its consulting process?</span>
-                        <img src="assets/CodeBubbyAssets/1_20703/53.svg" class="faq-icon faq-icon-down" alt="Expand">
-                        <img src="assets/CodeBubbyAssets/1_20703/54.svg" class="faq-icon faq-icon-up" alt="Collapse" style="display: none;">
+                
+                <!-- FAQ Item 2 - State=Inactive (initial) -->
+                <div class="faq-v1-item" data-faq="2">
+                    <!-- Feature Title Container - layout_VQN3BD -->
+                    <div class="faq-v1-question" onclick="toggleFAQ(2)">
+                        <!-- Question - Inter/Heading/H5/24/Medium -->
+                        <span class="faq-v1-question-text">How does Convergence Tech integrate AI into its consulting process?</span>
+                        <!-- CaretDown Icon -->
+                        <img src="assets/caret-down.svg" class="faq-v1-icon faq-v1-icon-down" alt="Expand">
+                        <!-- CaretUp Icon -->
+                        <img src="assets/caret-up.svg" class="faq-v1-icon faq-v1-icon-up" alt="Collapse">
                     </div>
-                    <div class="faq-answer">
+                    <!-- Answer - Inter/Heading/H6/18/Regular, Neutral/50 -->
+                    <div class="faq-v1-answer">
                         <p>We apply AI tools and data analysis to uncover insights, optimize operations, and improve decision-making.</p>
                     </div>
                 </div>
-                <div class="faq-item" data-faq="3">
-                    <div class="faq-question" onclick="toggleFAQ(3)">
-                        <span>How can I start working with Convergence Tech?</span>
-                        <img src="assets/CodeBubbyAssets/1_20703/53.svg" class="faq-icon faq-icon-down" alt="Expand">
-                        <img src="assets/CodeBubbyAssets/1_20703/54.svg" class="faq-icon faq-icon-up" alt="Collapse" style="display: none;">
+                
+                <!-- FAQ Item 3 - State=Inactive -->
+                <div class="faq-v1-item" data-faq="3">
+                    <!-- Feature Title Container - layout_VQN3BD -->
+                    <div class="faq-v1-question" onclick="toggleFAQ(3)">
+                        <!-- Question - Inter/Heading/H5/24/Medium, Neutral/100 -->
+                        <span class="faq-v1-question-text">How can I start working with Convergence Tech?</span>
+                        <!-- CaretDown Icon -->
+                        <img src="assets/caret-down.svg" class="faq-v1-icon faq-v1-icon-down" alt="Expand">
+                        <!-- CaretUp Icon -->
+                        <img src="assets/caret-up.svg" class="faq-v1-icon faq-v1-icon-up" alt="Collapse">
                     </div>
-                    <div class="faq-answer">
+                    <!-- Answer - Inter/Heading/H6/18/Regular, Neutral/50 -->
+                    <div class="faq-v1-answer">
                         <p>Contact our Singapore office by email. We'll schedule a brief consultation and outline a tailored plan for your needs.</p>
                     </div>
                 </div>
